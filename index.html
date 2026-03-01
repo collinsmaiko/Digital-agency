@@ -1974,8 +1974,7 @@
     <nav role="navigation" aria-label="Main navigation" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo" aria-label="Maiko Digital Agency">
-                Maiko<span>.</span>
-                <span class="logo-tagline">Digital Agency</span>
+                <img src="/assets/logo.png" alt="" width="80px" height="80px" style="position: fixed;">
             </a>
 
             <div class="nav-contact">
@@ -2601,7 +2600,8 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <a href="#" class="logo" aria-label="Maiko Digital Agency Home">
-                    Maiko<span>.</span>
+                    Maiko
+                    <span>.</span>
                     <span style="font-size: 0.7rem; font-weight: 500; margin-left: 0.5rem; opacity: 0.8;">Digital Agency</span>
                 </a>
                 <span class="footer-location">
@@ -2626,16 +2626,15 @@
         </div>
     </div>
 
-    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
-    {
+        {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Maiko Digital Agency",
         "description": "Professional web design agency in Kisii, Kenya. We build high-converting websites for businesses with M-Pesa Lipa na M-Pesa payment and fast delivery. Led by Collins Maiko.",
         "url": "https://collinsmaiko.dev",
         "telephone": "+254713324672",
-        "email": "hello@collinsmaiko.dev",
+        "email": "collinsmichael.dev@gmail.com",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Kisii",
@@ -2651,13 +2650,26 @@
             "@type": "Person",
             "name": "Collins Maiko"
         },
+        "logo": "https://collinsmaiko.dev/assets/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://www.instagram.com/yourhandle",
+            "https://www.linkedin.com/in/collinsmaiko"
+        ],
         "serviceType": ["Web Design", "Website Development", "E-commerce Development", "SEO Optimization"],
         "areaServed": ["Kisii", "Kenya"],
         "priceRange": "Ksh 5,000 - Ksh 50,000",
-        "openingHours": "Mo-Sa 08:00-20:00",
+        "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "08:00",
+            "closes": "20:00"
+            }
+        ],
         "paymentAccepted": "M-Pesa Lipa na M-Pesa",
         "currenciesAccepted": "KES"
-    }
+        }
     </script>
 
     <!-- JS: navbar, FAQ, sticky CTA, skeleton hide -->

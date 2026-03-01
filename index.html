@@ -39,7 +39,7 @@
     <link rel="canonical" href="https://collinsmaiko.dev">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg ' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2316a34a'>M</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2316a34a'>M</text></svg>">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Preconnect for performance -->
@@ -65,6 +65,8 @@
             --danger: #dc2626;
             --danger-light: #ef4444;
             --purple: #7c3aed;
+            --mpesa: #00A650;
+            --mpesa-dark: #008f43;
             --bg: #ffffff;
             --bg-alt: #f8fafc;
             --bg-dark: #020617;
@@ -200,6 +202,19 @@
         .btn-small {
             padding: 0.5rem 1.25rem;
             font-size: 0.9rem;
+        }
+
+        .btn-mpesa {
+            background: var(--mpesa);
+            color: var(--bg);
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-mpesa:hover {
+            background: var(--mpesa-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         /* Navigation */
@@ -835,6 +850,232 @@
             font-weight: 700;
         }
 
+        /* M-Pesa Payment Section */
+        .mpesa-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mpesa-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0,166,80,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .mpesa-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .mpesa-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .mpesa-header h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .mpesa-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .mpesa-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--mpesa);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .mpesa-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .mpesa-card {
+            background: var(--bg);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-xl);
+            border: 2px solid #bbf7d0;
+        }
+
+        .mpesa-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .mpesa-number-display {
+            background: linear-gradient(135deg, var(--mpesa) 0%, var(--mpesa-dark) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .mpesa-number-display .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .mpesa-number-display .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+
+        .mpesa-steps {
+            list-style: none;
+        }
+
+        .mpesa-steps li {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mpesa-steps li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--mpesa);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .step-content strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .step-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .mpesa-qr-placeholder {
+            background: var(--bg-alt);
+            border: 2px dashed var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .mpesa-qr-placeholder i {
+            font-size: 3rem;
+            color: var(--mpesa);
+            margin-bottom: 1rem;
+        }
+
+        .mpesa-qr-placeholder p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .mpesa-confirmation {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .mpesa-confirmation-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #92400e;
+            font-weight: 700;
+        }
+
+        .mpesa-confirmation-header i {
+            font-size: 1.25rem;
+        }
+
+        .mpesa-confirmation p {
+            color: #78350f;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .mpesa-confirmation .btn-whatsapp {
+            width: 100%;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .mpesa-security {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f0fdf4;
+            border-radius: 12px;
+        }
+
+        .mpesa-security i {
+            font-size: 1.5rem;
+            color: var(--mpesa);
+        }
+
+        .mpesa-security p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .mpesa-security strong {
+            color: var(--primary);
+        }
+
         /* Pricing Section - Psychology Optimized */
         .pricing-section {
             padding: 5rem 0;
@@ -1213,13 +1454,40 @@
         }
 
         .faq-item.active .faq-answer {
-            max-height: 300px;
+            max-height: 500px;
         }
 
         .faq-answer p {
             padding: 0 1.25rem 1.25rem;
             color: var(--text-light);
             line-height: 1.7;
+        }
+
+        .payment-steps {
+            background: #f0fdf4;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .payment-steps h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .payment-steps ol {
+            margin-left: 1.25rem;
+            color: var(--text-light);
+        }
+
+        .payment-steps li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .payment-steps strong {
+            color: var(--mpesa);
         }
 
         /* Final CTA */
@@ -1345,7 +1613,8 @@
         .portfolio-card,
         .problem-item,
         .faq-item,
-        .social-proof {
+        .social-proof,
+        .mpesa-card {
             border-radius: 20px;
             box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
         }
@@ -1356,7 +1625,8 @@
         }
 
         .section-header h2::after,
-        .pricing-intro h2::after {
+        .pricing-intro h2::after,
+        .mpesa-header h2::after {
             content: "";
             display: block;
             width: 48px;
@@ -1530,6 +1800,11 @@
                 margin-top: 0;
             }
 
+            .mpesa-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
             .footer-container {
                 flex-direction: column;
                 text-align: center;
@@ -1584,6 +1859,14 @@
 
             .btn {
                 width: 100%;
+            }
+
+            .mpesa-card {
+                padding: 1.5rem;
+            }
+
+            .mpesa-number-display .number {
+                font-size: 2rem;
             }
         }
 
@@ -1887,6 +2170,93 @@
             </div>
         </section>
 
+        <!-- M-Pesa Payment Section -->
+        <section class="mpesa-section" id="payment" aria-labelledby="mpesa-heading">
+            <div class="mpesa-container">
+                <div class="mpesa-header">
+                    <div class="mpesa-badge">
+                        <i class="fas fa-mobile-alt"></i> M-PESA PAYMENT
+                    </div>
+                    <h2 id="mpesa-heading">Simple & Secure Payment</h2>
+                    <p>Pay instantly using M-Pesa. No bank transfers, no waiting.</p>
+                </div>
+
+                <div class="mpesa-grid">
+                    <div class="mpesa-card">
+                        <h3><i class="fas fa-list-ol" style="color: var(--mpesa);"></i> How to Pay</h3>
+
+                        <div class="mpesa-number-display">
+                            <div class="label">Send Money to</div>
+                            <div class="number">0713 324 672</div>
+                        </div>
+
+                        <ul class="mpesa-steps">
+                            <li>
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <strong>Open M-Pesa Menu</strong>
+                                    <p>Go to your M-Pesa menu on your phone and select "Send Money"</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <strong>Enter Phone Number</strong>
+                                    <p>Enter <strong>0713 324 672</strong> (Collins Kenyatta)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <strong>Enter Amount</strong>
+                                    <p>Enter the agreed amount (50% upfront or full payment)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <strong>Confirm & Pay</strong>
+                                    <p>Enter your M-Pesa PIN to complete the transaction</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mpesa-security">
+                            <i class="fas fa-shield-alt"></i>
+                            <p><strong>Secure Payment</strong><br>Your transaction is protected by Safaricom M-Pesa security</p>
+                        </div>
+                    </div>
+
+                    <div class="mpesa-card">
+                        <h3><i class="fas fa-check-circle" style="color: var(--accent);"></i> Confirm Your Payment</h3>
+
+                        <div class="mpesa-qr-placeholder">
+                            <i class="fas fa-paper-plane"></i>
+                            <p><strong>Send Confirmation to WhatsApp</strong><br>After paying, forward the M-Pesa message to us</p>
+                        </div>
+
+                        <div class="mpesa-confirmation">
+                            <div class="mpesa-confirmation-header">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Important Next Step</span>
+                            </div>
+                            <p>Once you've paid, simply forward the M-Pesa confirmation message (SMS or notification) to our WhatsApp number. We'll verify your payment and start your project immediately.</p>
+                            <a href="https://wa.link/6z9li6?text=Hi%20Collins,%20I%20have%20made%20payment%20via%20M-Pesa.%20Here%20is%20the%20confirmation%20message:" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i> Send Confirmation to WhatsApp
+                            </a>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; padding: 1rem; background: #f0fdf4; border-radius: 12px; border-left: 4px solid var(--accent);">
+                            <p style="font-size: 0.9rem; color: var(--text-light); margin: 0;">
+                                <i class="fas fa-info-circle" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                                <strong>Tip:</strong> Screenshot the M-Pesa confirmation if you can't forward the SMS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Pricing Section -->
         <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
             <div class="pricing-intro">
@@ -1923,7 +2293,7 @@
                         <li><i class="fas fa-check" aria-hidden="true"></i> 2 weeks support</li>
                     </ul>
                     <div class="pricing-cta">
-                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Starter package (Ksh 5,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <a href="https://wa.link/6z9li6?text=Hi, I'm interested in the Starter package (Ksh 5,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
                     </div>
                 </div>
 
@@ -1960,7 +2330,7 @@
                         <li><i class="fas fa-check" aria-hidden="true"></i> 1 month support</li>
                     </ul>
                     <div class="pricing-cta">
-                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Business package (Ksh 12,000)" class="pricing-btn primary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <a href="https://wa.link/6z9li6?text=Hi, I'm interested in the Business package (Ksh 12,000)" class="pricing-btn primary" target="_blank" rel="noopener noreferrer">Get Started</a>
                         <div class="pricing-urgency" aria-hidden="true">Only 2 slots this week</div>
                     </div>
                 </div>
@@ -1994,7 +2364,7 @@
                         <li><i class="fas fa-check" aria-hidden="true"></i> 3 months support</li>
                     </ul>
                     <div class="pricing-cta">
-                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Enterprise package (Ksh 25,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <a href="https://wa.link/6z9li6?text=Hi, I'm interested in the Enterprise package (Ksh 25,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -2029,7 +2399,21 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div id="faq-answer-1" class="faq-answer">
-                        <p>Simple and secure. Pay 50% upfront via M-Pesa (0713 324 672) to get started, 50% when you're 100% satisfied with the final website. No bank transfers, no complicated processes.</p>
+                        <p>Simple and secure. Pay 50% upfront via M-Pesa to get started, 50% when you're 100% satisfied with the final website.</p>
+
+                        <div class="payment-steps">
+                            <h4><i class="fas fa-mobile-alt" style="color: var(--mpesa);"></i> M-Pesa Payment Steps:</h4>
+                            <ol>
+                                <li>Go to M-Pesa → Send Money</li>
+                                <li>Enter number: <strong>0713 324 672</strong> (Collins Maiko)</li>
+                                <li>Enter amount (50% of package price)</li>
+                                <li>Enter your PIN to confirm</li>
+                                <li><strong>Important:</strong> Forward the M-Pesa confirmation SMS to our WhatsApp</li>
+                            </ol>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                                <i class="fas fa-info-circle"></i> We start working immediately after payment confirmation
+                            </p>
+                        </div>
                     </div>
                 </div>
 

@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Maiko Digital Agency | Professional Web Design Kisii - Websites That Convert</title>
+    <meta name="description" content="Kisii's trusted web design agency. We build high-converting websites for local businesses with M-Pesa payment, 48hr delivery. Led by Collins Maiko. Call 0713 324 672.">
+    <meta name="keywords" content="web design agency kisii, website developer kisii, web design company kenya, maiko digital agency, collins maiko, business website kisii">
+    <meta name="author" content="Collins Maiko">
+    <meta name="robots" content="index, follow">
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="KE-400">
+    <meta name="geo.placename" content="Kisii">
+    <meta name="geo.position" content="-0.6773;34.7796">
+    <meta name="ICBM" content="-0.6773, 34.7796">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maiko Digital Agency | Professional Web Design Kisii">
+    <meta property="og:description" content="Kisii's trusted web design agency. We build websites that get customers. M-Pesa accepted. 48hr delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://collinsmaiko.dev">
+    <meta property="og:image" content="https://i.postimg.cc/jjVMDGYX/IMG-20260212-103645-087-(1)-(1).jpg">
+    <meta property="og:locale" content="en_KE">
+    <meta property="og:site_name" content="Maiko Digital Agency">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maiko Digital Agency | Web Design Kisii">
+    <meta name="twitter:description" content="Trusted web design agency in Kisii. We build websites that convert visitors into customers.">
+    <meta name="twitter:image" content="https://i.postimg.cc/jjVMDGYX/IMG-20260212-103645-087-(1)-(1).jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://collinsmaiko.dev">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg ' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2316a34a'>M</text></svg>">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Agency-Level Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        /* CSS Variables for consistency */
+        :root {
+            --primary: #0f172a;
+            --accent: #16a34a;
+            --accent-light: #22c55e;
+            --accent-dark: #15803d;
+            --gold: #f59e0b;
+            --danger: #dc2626;
+            --danger-light: #ef4444;
+            --purple: #7c3aed;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --bg-dark: #020617;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --text-muted: #94a3b8;
+            --border: #e2e8f0;
+            --border-light: rgba(255,255,255,0.1);
+            --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
+            --transition-fast: 0.2s ease;
+            --transition-base: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Skip Link - Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent);
+            color: var(--bg);
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            font-weight: 600;
+            border-radius: 0 0 4px 0;
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Focus Visible for keyboard navigation */
+        *:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Button Base Styles - Centralized */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            line-height: 1.5;
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: var(--bg);
+            margin-block: 10px 10px;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128c7e;
+        }
+
+        .btn-secondary {
+            background: var(--bg);
+            color: var(--primary);
+            border: 2px solid var(--border);
+            margin-block: 10px 10px;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--bg-alt);
+        }
+
+        .btn-small {
+            padding: 0.5rem 1.25rem;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: box-shadow var(--transition-fast);
+        }
+
+        nav.scrolled {
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .logo-tagline {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 0.5rem;
+            border-left: 2px solid var(--border);
+            padding-left: 0.5rem;
+        }
+
+        .nav-contact {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-phone {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-phone:hover {
+            color: var(--accent);
+        }
+
+        .nav-phone-mobile {
+            display: none;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 5rem;
+            background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(22,163,74,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .agency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0fdf4;
+            color: var(--accent-dark);
+            border: 1px solid #bbf7d0;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .agency-badge i {
+            color: var(--accent);
+        }
+
+        .urgency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #fef2f2;
+            color: var(--danger);
+            border: 1px solid #fecaca;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .urgency-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--danger);
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .hero-location {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        .trust-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .trust-item i {
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.25rem;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .social-proof {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            max-width: fit-content;
+        }
+
+        .avatar-group {
+            display: flex;
+        }
+
+        .avatar-group img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid var(--bg);
+            margin-left: -12px;
+            object-fit: cover;
+            transition: transform var(--transition-fast);
+        }
+
+        .avatar-group img:first-child {
+            margin-left: 0;
+        }
+
+        .avatar-group img:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .social-proof-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .social-proof-text strong {
+            color: var(--primary);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Floating Cards - Decorative, aria-hidden */
+        .float-card {
+            position: absolute;
+            background: var(--bg);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: transform var(--transition-base);
+        }
+
+        .float-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .float-card.top {
+            top: -10px;
+            right: -10px;
+        }
+
+        .float-card.bottom {
+            bottom: 20px;
+            left: -10px;
+        }
+
+        .float-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg);
+            font-size: 1.25rem;
+        }
+
+        .float-content strong {
+            display: block;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .float-content span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 5rem 0;
+            background: var(--primary);
+            color: var(--bg);
+            text-align: center;
+        }
+
+        .problem-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .problem-section h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .problem-section > p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .problem-item {
+            background: var(--border-light);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-light);
+            transition: transform var(--transition-base);
+        }
+
+        .problem-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .problem-item i {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .problem-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-item p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin: 0;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            padding: 5rem 0;
+            background: var(--bg);
+        }
+
+        .solution-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .solution-content h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .solution-content > p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .benefit-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .benefit-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            padding: 1rem;
+            background: var(--bg-alt);
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            transition: transform var(--transition-fast);
+        }
+
+        .benefit-list li:hover {
+            transform: translateX(4px);
+        }
+
+        .benefit-list i {
+            color: var(--accent);
+            font-size: 1.25rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .benefit-list strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .benefit-list span {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .solution-image img {
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            transition: transform var(--transition-slow);
+        }
+
+        .solution-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            padding: 5rem 0;
+            background: var(--bg-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        .portfolio-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .portfolio-grid > a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .portfolio-card {
+            background: var(--bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .portfolio-card:active {
+            transform: scale(0.98);
+        }
+
+        .portfolio-card.featured {
+            grid-column: span 2;
+        }
+
+        .portfolio-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .portfolio-card.featured .portfolio-image {
+            height: 350px;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--accent);
+            color: var(--bg);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .portfolio-content {
+            padding: 1.5rem;
+        }
+
+        .portfolio-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .portfolio-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .portfolio-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0fdf4;
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* Pricing Section - Psychology Optimized */
+        .pricing-section {
+            padding: 5rem 0;
+            background: var(--bg);
+        }
+
+        .pricing-intro {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .pricing-intro h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+        }
+
+        .pricing-intro p {
+            color: var(--text-light);
+        }
+
+        .pricing-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            align-items: flex-start;
+        }
+
+        .pricing-card {
+            background: var(--bg);
+            border: 2px solid var(--border);
+            padding: 2.5rem 2rem;
+            transition: all var(--transition-base);
+            position: relative;
+        }
+
+        .pricing-card:first-child {
+            border-radius: 20px 0 0 20px;
+            border-right: none;
+        }
+
+        .pricing-card:last-child {
+            border-radius: 0 20px 20px 0;
+            border-left: none;
+        }
+
+        .pricing-card.popular {
+            background: linear-gradient(180deg, var(--bg) 0%, #f0fdf4 100%);
+            border: 3px solid var(--accent);
+            border-radius: 20px;
+            transform: scale(1.05);
+            z-index: 2;
+            box-shadow: var(--shadow-xl);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            margin-top: -1rem;
+        }
+
+        .value-prop {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .value-prop i {
+            color: var(--gold);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: var(--bg);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .pricing-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .price-anchoring {
+            margin-bottom: 0.5rem;
+        }
+
+        .original-price {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+            margin-right: 0.5rem;
+        }
+
+        .savings-badge {
+            display: inline-block;
+            background: #fef2f2;
+            color: var(--danger);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem 0;
+            font-size: 0.95rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features i {
+            color: var(--accent);
+            font-size: 1rem;
+            width: 20px;
+            flex-shrink: 0;
+        }
+
+        .pricing-features .fa-times {
+            color: var(--text-muted);
+        }
+
+        .pricing-cta {
+            text-align: center;
+        }
+
+        .pricing-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+            margin-bottom: 0.75rem;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .pricing-btn.primary {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-btn.primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-btn.secondary {
+            background: var(--bg-alt);
+            color: var(--primary);
+            border: 2px solid var(--border);
+        }
+
+        .pricing-btn.secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--bg);
+        }
+
+        .pricing-urgency {
+            font-size: 0.8rem;
+            color: var(--danger);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-urgency::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--danger);
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        .pricing-social-proof {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: var(--bg-alt);
+            border-radius: 16px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-social-proof p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .pricing-social-proof strong {
+            color: var(--primary);
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+
+        .guarantee-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .guarantee-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--gold);
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-base);
+        }
+
+        .guarantee-icon:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .guarantee-container h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .guarantee-container p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--bg-alt);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-item {
+            background: var(--bg);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: box-shadow var(--transition-fast);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item.active {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background var(--transition-fast);
+        }
+
+        .faq-question:hover {
+            background: var(--bg-alt);
+        }
+
+        .faq-question:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: -2px;
+        }
+
+        .faq-question i {
+            color: var(--accent);
+            transition: transform var(--transition-base);
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-base);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 1.25rem 1.25rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: 5rem 0;
+            background: var(--primary);
+            color: var(--bg);
+            text-align: center;
+        }
+
+        .final-cta-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .final-cta > p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .final-cta .btn-primary {
+            font-size: 1.1rem;
+            padding: 1.25rem 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            transition: opacity var(--transition-fast);
+        }
+
+        .contact-info a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            background: var(--bg-dark);
+            color: var(--bg);
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-brand .logo {
+            color: var(--bg);
+        }
+
+        .footer-brand .logo:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-location {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-credits {
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+
+        /* Sticky CTA - MOBILE ONLY (hidden by default on desktop) */
+        .sticky-cta {
+            display: none; /* Hidden on desktop by default */
+        }
+
+        /* ---------- LUXURY / EXPENSIVE TWEAKS (NON-DESTRUCTIVE) ---------- */
+
+        h1, h2, h3 {
+            letter-spacing: 0.03em;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5f8ec 40%, #ffffff 100%);
+        }
+
+        .hero-image {
+            border-radius: 22px;
+            box-shadow:
+                0 20px 55px rgba(15, 23, 42, 0.16),
+                0 0 0 1px rgba(226, 232, 240, 0.8);
+        }
+
+        .pricing-card,
+        .portfolio-card,
+        .problem-item,
+        .faq-item,
+        .social-proof {
+            border-radius: 20px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
+        }
+
+        .pricing-card.popular {
+            background: radial-gradient(circle at top, #fefce8 0%, #f0fdf4 45%, #ffffff 100%);
+            box-shadow: 0 26px 70px rgba(15, 23, 42, 0.18);
+        }
+
+        .section-header h2::after,
+        .pricing-intro h2::after {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 3px;
+            margin: 0.75rem auto 0;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #f59e0b, #f97316);
+        }
+
+        /* ---------- SKELETON LOADER ---------- */
+
+        .skeleton {
+            position: relative;
+            overflow: hidden;
+            background: #e5e7eb;
+            border-radius: 999px;
+        }
+
+        .skeleton::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                120deg,
+                rgba(148, 163, 184, 0),
+                rgba(148, 163, 184, 0.35),
+                rgba(148, 163, 184, 0)
+            );
+            transform: translateX(-100%);
+            animation: skeleton-shimmer 1.2s infinite;
+        }
+
+        .skeleton-text {
+            height: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skeleton-text.lg {
+            height: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .skeleton-block {
+            border-radius: 16px;
+            height: 200px;
+            background: #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skeleton-block::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                120deg,
+                rgba(148, 163, 184, 0),
+                rgba(148, 163, 184, 0.35),
+                rgba(148, 163, 184, 0)
+            );
+            transform: translateX(-100%);
+            animation: skeleton-shimmer 1.2s infinite;
+        }
+
+        .skeleton-wrapper {
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes skeleton-shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        body.loaded .skeleton-wrapper {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-contact {
+                display: none;
+            }
+
+            .nav-phone-mobile {
+                display: flex;
+            }
+
+            .hero-container {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .trust-bar {
+                justify-content: center;
+            }
+
+            .stats-bar {
+                justify-content: center;
+            }
+
+            .cta-group {
+                justify-content: center;
+            }
+
+            .social-proof {
+                margin: 0 auto;
+            }
+
+            .social-proof-text {
+                text-align: left;
+            }
+
+            .hero-visual {
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .hero-image img {
+                height: 300px;
+            }
+
+            .float-card {
+                display: none;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-card.featured {
+                grid-column: span 1;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .pricing-card:first-child,
+            .pricing-card:last-child {
+                border-radius: 20px;
+                border: 2px solid var(--border);
+            }
+
+            .pricing-card.popular {
+                order: -1;
+                transform: scale(1);
+                margin-top: 0;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            /* Sticky CTA - MOBILE ONLY styles */
+            .sticky-cta {
+                display: none; /* Hidden by default, shown via JS */
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--bg);
+                padding: 1rem;
+                border-top: 1px solid var(--border);
+                z-index: 999;
+                box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.1);
+            }
+
+            .sticky-cta.visible {
+                display: block;
+            }
+
+            .sticky-cta-container {
+                max-width: 600px;
+                margin: 0 auto;
+                display: flex;
+                gap: 1rem;
+            }
+
+            .sticky-cta .btn {
+                flex: 1;
+                padding: 0.875rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .trust-bar {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        @media print {
+            nav, .sticky-cta, .float-card {
+                display: none !important;
+            }
+
+            .hero {
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Maiko Digital Agency">
+                Maiko<span>.</span>
+                <span class="logo-tagline">Digital Agency</span>
+            </a>
+
+            <div class="nav-contact">
+                <a href="tel:+254713324672" class="nav-phone" aria-label="Call Maiko Digital Agency at 0713 324 672">
+                    <i class="fas fa-phone" aria-hidden="true"></i> 0713 324 672
+                </a>
+                <a href="https://wa.link/6z9li6" class="btn btn-small btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Maiko Digital Agency on WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Get Quote
+                </a>
+            </div>
+            <a href="tel:+254713324672" class="nav-phone-mobile" aria-label="Call Maiko Digital Agency">
+                <i class="fas fa-phone" aria-hidden="true"></i> 0713 324 672
+            </a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Skeleton for hero text -->
+                    <div class="skeleton-wrapper">
+                        <div class="skeleton skeleton-text lg" style="width:70%;"></div>
+                        <div class="skeleton skeleton-text lg" style="width:55%;"></div>
+                        <div class="skeleton skeleton-text" style="width:80%;"></div>
+                        <div class="skeleton skeleton-text" style="width:60%;"></div>
+
+                        <div style="display:flex; gap:0.75rem; margin-top:1.5rem;">
+                            <div class="skeleton" style="width:160px; height:48px;"></div>
+                            <div class="skeleton" style="width:140px; height:48px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <div class="agency-badge">
+                            <i class="fas fa-award"></i> Kisii's Trusted Web Agency
+                        </div>
+                        <div class="urgency-badge" aria-hidden="true">
+                            Only 2 slots this week
+                        </div>
+                    </div>
+                    <h1>
+                        We Build <span class="hero-location">Websites</span> That<br>
+                        Turn Visitors Into Customers
+                    </h1>
+                    <p class="hero-subtitle">
+                        Maiko Digital Agency helps Kisii businesses grow with professional, high-converting websites. Led by Collins Maiko, we've helped 20+ local businesses increase their revenue through strategic web design.
+                    </p>
+
+                    <div class="stats-bar">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Businesses Helped</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150%</div>
+                            <div class="stat-label">Avg. Lead Increase</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">48hrs</div>
+                            <div class="stat-label">Fast Delivery</div>
+                        </div>
+                    </div>
+
+                    <div class="trust-bar">
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>M-Pesa Accepted</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>50% Upfront Only</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Unlimited Revisions</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="https://wa.link/6z9li6" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Start your project on WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Get Free Consultation
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary">
+                            View Our Work
+                        </a>
+                    </div>
+
+                    <div class="social-proof">
+                        <div class="avatar-group" aria-hidden="true">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+                        </div>
+                        <p class="social-proof-text">
+                            <strong>Trusted by 20+ businesses</strong><br>across Kisii & Kenya
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Professional web design workspace showing website development" loading="lazy" fetchpriority="high">
+                    </div>
+                    <div class="float-card top" aria-hidden="true">
+                        <div class="float-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="float-content">
+                            <strong>#1 Rated</strong>
+                            <span>in Kisii</span>
+                        </div>
+                    </div>
+                    <div class="float-card bottom" aria-hidden="true">
+                        <div class="float-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="float-content">
+                            <strong>24/7</strong>
+                            <span>Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="problem-section" aria-labelledby="problem-heading">
+            <div class="problem-container">
+                <h2 id="problem-heading">Is Your Business Invisible Online?</h2>
+                <p>Every day without a professional website, you're losing customers to competitors. Here's what we see too often in Kisii:</p>
+
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <h3>Broken on Phones</h3>
+                        <p>80% of Kenyans browse on mobile, but most local sites don't work properly</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+                        <h3>Slow Loading</h3>
+                        <p>Slow sites make visitors leave before seeing what you offer</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-user-slash" aria-hidden="true"></i>
+                        <h3>No Conversions</h3>
+                        <p>Most websites look good but don't actually bring paying clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution-section" aria-labelledby="solution-heading">
+            <div class="solution-container">
+                <div class="solution-content">
+                    <h2 id="solution-heading">We Build Websites That Work While You Sleep</h2>
+                    <p>At Maiko Digital Agency, we create strategic websites that become your best salesperson. Here's what our team delivers:</p>
+
+                    <ul class="benefit-list">
+                        <li>
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                            <div>
+                                <strong>Lightning Fast Performance</strong>
+                                <span>We build sites that load in under 2 seconds. Speed = more customers.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                            <div>
+                                <strong>Mobile-First Design</strong>
+                                <span>We design for phones first, because that's where your customers are.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <div>
+                                <strong>SEO Optimized</strong>
+                                <span>We optimize your site to rank when people search for your business.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <div>
+                                <strong>Conversion Focused</strong>
+                                <span>Every element we design is crafted to turn visitors into paying customers.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.link/6z9li6" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Get your free quote on WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Get Free Quote
+                    </a>
+                </div>
+                <div class="solution-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" alt="Business growth chart showing increased website traffic and conversions" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="section-header">
+                <h2 id="portfolio-heading">Our Recent Work</h2>
+                <p>Case studies from businesses we've helped grow in Kisii:</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <a href="#" aria-label="View Mama's Kitchen restaurant case study by Maiko Digital Agency">
+                    <article class="portfolio-card featured">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=600&fit=crop" alt="Mama's Kitchen restaurant interior with customers dining" loading="lazy">
+                            <span class="portfolio-badge">Restaurant</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kisii Town</span>
+                                <span><i class="fas fa-tag" aria-hidden="true"></i> Ksh 12,000</span>
+                            </div>
+                            <h3>Mama's Kitchen</h3>
+                            <p>We built an online ordering system with WhatsApp integration. Owner Peter now gets 5+ orders daily through the website we created.</p>
+                            <div class="result-badge">
+                                <i class="fas fa-arrow-up" aria-hidden="true"></i> 150% more bookings
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" aria-label="View Glamour Salon beauty website case study by Maiko Digital Agency">
+                    <article class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop" alt="Glamour Salon interior with modern styling stations" loading="lazy">
+                            <span class="portfolio-badge">Beauty</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kisii</span>
+                                <span><i class="fas fa-tag" aria-hidden="true"></i> Ksh 8,000</span>
+                            </div>
+                            <h3>Glamour Salon</h3>
+                            <p>We created an appointment booking system that keeps Jane fully booked 3 weeks ahead.</p>
+                            <div class="result-badge">
+                                <i class="fas fa-calendar-check" aria-hidden="true"></i> Fully booked
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" aria-label="View Kisii Agro Supplies e-commerce case study by Maiko Digital Agency">
+                    <article class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&h=400&fit=crop" alt="Agricultural supplies store with farming products" loading="lazy">
+                            <span class="portfolio-badge">E-Commerce</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kisii</span>
+                                <span><i class="fas fa-tag" aria-hidden="true"></i> Ksh 45,000</span>
+                            </div>
+                            <h3>Kisii Agro Supplies</h3>
+                            <p>We built their online store. Now they're selling farm inputs nationwide with M-Pesa payments.</p>
+                            <div class="result-badge">
+                                <i class="fas fa-truck" aria-hidden="true"></i> Selling nationwide
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+            <div class="pricing-intro">
+                <h2 id="pricing-heading">Transparent Pricing</h2>
+                <p>Investment packages designed for Kisii businesses. Most clients start with Business.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Package -->
+                <div class="pricing-card">
+                    <!-- Skeleton pricing -->
+                    <div class="skeleton-wrapper">
+                        <div class="skeleton skeleton-text lg" style="width:50%;"></div>
+                        <div class="skeleton skeleton-text" style="width:40%;"></div>
+                        <div class="skeleton skeleton-text" style="width:35%;"></div>
+                        <div class="skeleton-block" style="margin-top:1rem;"></div>
+                    </div>
+
+                    <div class="pricing-header">
+                        <div class="pricing-name">Starter</div>
+                        <div class="pricing-desc">Perfect for new businesses</div>
+                        <div class="price-anchoring">
+                            <span class="original-price">Ksh 8,000</span>
+                            <span class="savings-badge">Save 3K</span>
+                        </div>
+                        <div class="pricing-price">Ksh 5,000</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 1 professional page</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Mobile responsive</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> WhatsApp integration</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Basic SEO setup</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 48 hour delivery</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 2 weeks support</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Starter package (Ksh 5,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Business Package -->
+                <div class="pricing-card popular">
+                    <!-- Skeleton pricing -->
+                    <div class="skeleton-wrapper">
+                        <div class="skeleton skeleton-text lg" style="width:55%;"></div>
+                        <div class="skeleton skeleton-text" style="width:45%;"></div>
+                        <div class="skeleton skeleton-text" style="width:35%;"></div>
+                        <div class="skeleton-block" style="margin-top:1rem;"></div>
+                    </div>
+
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="value-prop" aria-hidden="true">
+                        <i class="fas fa-star"></i> 85% of clients choose this
+                    </div>
+                    <div class="pricing-header">
+                        <div class="pricing-name">Business</div>
+                        <div class="pricing-desc">For serious growth</div>
+                        <div class="price-anchoring">
+                            <span class="original-price">Ksh 25,000</span>
+                            <span class="savings-badge">Save 13K</span>
+                        </div>
+                        <div class="pricing-price">Ksh 12,000</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Up to 5 pages</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Premium mobile design</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Smart contact forms</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Google Maps integration</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Full SEO optimization</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 24 hour delivery</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 1 month support</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Business package (Ksh 12,000)" class="pricing-btn primary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <div class="pricing-urgency" aria-hidden="true">Only 2 slots this week</div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="pricing-card">
+                    <!-- Skeleton pricing -->
+                    <div class="skeleton-wrapper">
+                        <div class="skeleton skeleton-text lg" style="width:50%;"></div>
+                        <div class="skeleton skeleton-text" style="width:40%;"></div>
+                        <div class="skeleton skeleton-text" style="width:35%;"></div>
+                        <div class="skeleton-block" style="margin-top:1rem;"></div>
+                    </div>
+
+                    <div class="pricing-header">
+                        <div class="pricing-name">Enterprise</div>
+                        <div class="pricing-desc">For established businesses</div>
+                        <div class="price-anchoring">
+                            <span class="original-price">Ksh 50,000</span>
+                            <span class="savings-badge">Save 25K</span>
+                        </div>
+                        <div class="pricing-price">Ksh 25,000</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 10+ custom pages</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom design</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> E-commerce ready</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Blog setup</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Priority delivery</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 3 months support</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.link/6z9li6?text=Hi , I'm interested in the Enterprise package (Ksh 25,000)" class="pricing-btn secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-social-proof">
+                <p><strong>Join 20+ Kisii businesses</strong> who've invested in their online presence with us. Average ROI: 300% in first 3 months.</p>
+            </div>
+        </section>
+
+        <!-- Guarantee Section -->
+        <section class="guarantee-section" aria-labelledby="guarantee-heading">
+            <div class="guarantee-container">
+                <div class="guarantee-icon" aria-hidden="true">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h2 id="guarantee-heading">Our 100% Satisfaction Guarantee</h2>
+                <p>Not happy with your website? We'll keep working on it until you love it. No extra charges. Your success is our reputation in Kisii.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="section-header">
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <p>Everything you need to know about working with us:</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
+                        How does payment work?
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="faq-answer-1" class="faq-answer">
+                        <p>Simple and secure. Pay 50% upfront via M-Pesa (0713 324 672) to get started, 50% when you're 100% satisfied with the final website. No bank transfers, no complicated processes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        How fast can you deliver?
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="faq-answer-2" class="faq-answer">
+                        <p>Starter websites in 3-4 hours. Business sites in 24 hours. We know you need to move fast, so we work fast without compromising quality.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        Do I need technical knowledge?
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="faq-answer-3" class="faq-answer">
+                        <p>Not at all. Just tell us about your business and goals. Our team handles all the technical aspects - you focus on running your business.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        What if I don't like the design?
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="faq-answer-4" class="faq-answer">
+                        <p>Unlimited revisions until you're 100% satisfied. We don't stop until you love your new website. That's our promise.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        Do you work outside Kisii?
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="faq-answer-5" class="faq-answer">
+                        <p>Absolutely! While we're based in Kisii, we serve businesses across all of Kenya. WhatsApp and email make distance irrelevant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta" aria-labelledby="cta-heading">
+            <div class="final-cta-container">
+                <h2 id="cta-heading">Ready to Grow Your Business?</h2>
+                <p>Every day without a professional website is money left on the table. Let's fix that today.</p>
+                <a href="https://wa.link/6z9li6" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Message Maiko Digital Agency on WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Start Your Project
+                </a>
+                <div class="contact-info">
+                    <a href="tel:+254713324672" aria-label="Call Maiko Digital Agency"><i class="fas fa-phone" aria-hidden="true"></i> 0713 324 672</a>
+                    <a href="mailto:collinsmichael.dev@gmail.com" aria-label="Email Maiko Digital Agency"><i class="fas fa-envelope" aria-hidden="true"></i>collinsmichael.dev@gmail.com</a>
+                    <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kisii, Kenya (Serving nationwide)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo" aria-label="Maiko Digital Agency Home">
+                    Maiko<span>.</span>
+                    <span style="font-size: 0.7rem; font-weight: 500; margin-left: 0.5rem; opacity: 0.8;">Digital Agency</span>
+                </a>
+                <span class="footer-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kisii, Kenya
+                </span>
+            </div>
+            <div class="footer-credits">
+                Led by <strong>Collins Maiko</strong> • Est. 2022
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA - ONLY SHOWS ON MOBILE (controlled by CSS media query and JS) -->
+    <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+        <div class="sticky-cta-container">
+            <a href="tel:+254713324672" class="btn btn-secondary" aria-label="Call Maiko Digital Agency">
+                <i class="fas fa-phone" aria-hidden="true"></i> Call
+            </a>
+            <a href="https://wa.link/6z9li6" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Maiko Digital Agency on WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Maiko Digital Agency",
+        "description": "Professional web design agency in Kisii, Kenya. We build high-converting websites for businesses with M-Pesa payment and fast delivery. Led by Collins Maiko.",
+        "url": "https://collinsmaiko.dev",
+        "telephone": "+254713324672",
+        "email": "hello@collinsmaiko.dev",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kisii",
+            "addressRegion": "Nyanza",
+            "addressCountry": "KE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-0.6773",
+            "longitude": "34.7796"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Collins Maiko"
+        },
+        "serviceType": ["Web Design", "Website Development", "E-commerce Development", "SEO Optimization"],
+        "areaServed": ["Kisii", "Kenya"],
+        "priceRange": "Ksh 5,000 - Ksh 50,000",
+        "openingHours": "Mo-Sa 08:00-20:00",
+        "paymentAccepted": "M-Pesa",
+        "currenciesAccepted": "KES"
+    }
+    </script>
+
+    <!-- JS: navbar, FAQ, sticky CTA, skeleton hide -->
+    <script>
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Hide skeletons when fully loaded
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+
+            button.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    button.click();
+                }
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        history.pushState(null, null, href);
+                    }
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        const handleNavScroll = debounce(() => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }, 10);
+
+        window.addEventListener('scroll', handleNavScroll, { passive: true });
+
+        // Sticky CTA visibility - MOBILE ONLY
+        const stickyCta = document.getElementById('stickyCta');
+        const heroSection = document.querySelector('.hero');
+        const finalCta = document.querySelector('.final-cta');
+
+        const isMobile = () => window.innerWidth <= 968;
+
+        const handleStickyCta = debounce(() => {
+            if (!isMobile()) {
+                stickyCta.classList.remove('visible');
+                return;
+            }
+
+            const scrollY = window.scrollY;
+            const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 0;
+            const finalCtaTop = finalCta ? finalCta.offsetTop : 0;
+            const windowHeight = window.innerHeight;
+
+            if (scrollY > heroBottom - 100 && scrollY < finalCtaTop - windowHeight + 100) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }, 10);
+
+        window.addEventListener('scroll', handleStickyCta, { passive: true });
+        window.addEventListener('resize', debounce(handleStickyCta, 100));
+
+        // Hash direct-link support
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    if (target.classList.contains('faq-item')) {
+                        target.querySelector('.faq-question').click();
+                    }
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>

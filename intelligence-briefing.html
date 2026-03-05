@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Intelligence Briefing | Maiko Digital</title>
+<meta name="description" content="Maiko Lab essays on speed, security, and M-Pesa funnels for Kenyan and global brands.">
+<!-- fonts aligned with index/work -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+    --bg:#000000;
+    --surface:#050505;
+    --surface-soft:#090909;
+    --accent:#10b981;
+    --accent-soft:rgba(16,185,129,0.16);
+    --border:rgba(255,255,255,0.16);
+    --border-subtle:rgba(255,255,255,0.08);
+    --text-main:#ffffff;
+    --text-soft:#e5e5e5;
+    --text-muted:#b3b3b3;
+    --nav-height:110px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+    --radius-lg:28px;
+    --radius-pill:999px;
+    --shadow-soft:0 18px 55px rgba(0,0,0,0.7);
+    --content-width:900px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:var(--nav-height);
+    overflow-x:hidden;
+}
+
+body{
+    background:radial-gradient(circle at top,rgba(16,185,129,0.08),transparent 55%),var(--bg);
+    color:var(--text-main);
+    font-family:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    overflow-x:hidden;
+    line-height:1.7;
+    max-width:100vw;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+}
+
+h1,h2,h3{
+    font-family:"Space Grotesk",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-weight:700;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+p,span,div{
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+/* HEADER – simple logo bar to match ecosystem */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:var(--nav-height);
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding:0 clamp(1rem,5vw,7%);
+    z-index:1000;
+    transition:0.6s var(--ease);
+    border-bottom:1px solid transparent;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.96);
+}
+
+header.scrolled{
+    height:85px;
+    background:rgba(0,0,0,0.96);
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    font-size:clamp(1.35rem,3.2vw,1.9rem);
+    font-weight:800;
+    letter-spacing:-0.12em;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-transform:uppercase;
+    color:var(--text-main);
+    white-space:nowrap;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.logo-box{
+    width:12px;
+    height:12px;
+    background:var(--accent);
+    border-radius:2px;
+    transform:rotate(45deg);
+    box-shadow:0 0 18px rgba(16,185,129,0.6);
+    flex-shrink:0;
+}
+
+/* PAGE SHELL */
+main{
+    max-width:var(--content-width);
+    margin:0 auto;
+    padding:clamp(7rem,15vh,9rem) clamp(1.2rem,7vw,7%);
+    padding-top:calc(var(--nav-height) + 3rem);
+}
+
+section + section{
+    margin-top:clamp(3.5rem,7vh,4.5rem);
+}
+
+/* HERO – match work/index scale */
+.badge{
+    color:var(--accent);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:0.28em;
+    font-size:clamp(0.72rem,1.4vw,0.85rem);
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    padding:0.35rem 0.9rem;
+    border-radius:var(--radius-pill);
+    border:1px solid rgba(16,185,129,0.6);
+    background:rgba(16,185,129,0.12);
+    white-space:nowrap;
+}
+
+.badge::before{
+    content:"●";
+    font-size:0.6rem;
+}
+
+.hero-title{
+    font-size:clamp(2.4rem,5.8vw,3.6rem);
+    letter-spacing:-0.05em;
+    margin:1.6rem 0 0.9rem;
+    line-height:1.02;
+}
+
+.hero-sub{
+    color:var(--text-soft);
+    max-width:42rem;
+    font-size:clamp(1.02rem,2vw,1.18rem);
+    line-height:1.85;
+    margin-bottom:clamp(2.6rem,5vh,3.4rem);
+    font-weight:400;
+}
+
+/* POSTS GRID */
+.post-grid{
+    margin-top:clamp(3.2rem,6vh,4.4rem);
+    display:grid;
+    gap:clamp(1.9rem,3.6vh,2.8rem);
+}
+
+.post-card{
+    border-radius:var(--radius-lg);
+    border:1px solid var(--border-subtle);
+    background:
+    radial-gradient(circle at top left,var(--accent-soft),transparent 55%),
+    linear-gradient(145deg,var(--surface-soft),var(--surface));
+    padding:1.9rem 2.1rem;
+    box-shadow:var(--shadow-soft);
+    position:relative;
+    overflow:hidden;
+}
+
+.post-meta{
+    font-size:clamp(0.78rem,1.3vw,0.9rem);
+    text-transform:uppercase;
+    letter-spacing:0.22em;
+    color:var(--text-muted);
+    margin-bottom:0.6rem;
+    font-weight:700;
+}
+
+.post-title{
+    font-size:clamp(1.4rem,2.3vw,1.8rem);
+    margin-bottom:0.7rem;
+    letter-spacing:-0.02em;
+    color:var(--text-main);
+}
+
+.post-excerpt{
+    color:var(--text-soft);
+    font-size:clamp(0.96rem,1.9vw,1.06rem);
+    margin-bottom:1.25rem;
+    line-height:1.85;
+}
+
+.post-link{
+    color:var(--accent);
+    font-weight:800;
+    text-decoration:none;
+    font-size:clamp(0.9rem,1.7vw,0.98rem);
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    display:inline-flex;
+    align-items:center;
+    gap:0.35rem;
+}
+
+.post-link::after{
+    content:"→";
+    font-size:0.9rem;
+}
+
+.post-link:hover{
+    text-decoration:underline;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    :root{--nav-height:70px;}
+
+    body{
+    font-size:15px;
+    }
+
+    header{
+    height:var(--nav-height);
+    padding:0 clamp(1rem,4vw,2rem);
+    }
+
+    .logo{
+    font-size:1.3rem;
+    letter-spacing:-0.1em;
+    }
+
+    main{
+    padding-top:calc(var(--nav-height) + 2.3rem);
+    padding-left:1.1rem;
+    padding-right:1.1rem;
+    }
+
+    .post-card{
+    border-radius:22px;
+    padding:1.6rem 1.7rem;
+    }
+}
+
+@media(max-width:400px){
+    .hero-title{
+    font-size:2.1rem;
+    }
+    .badge{
+    letter-spacing:0.18em;
+    }
+}
+</style>
+</head>
+<body>
+<header id="main-nav">
+<div class="logo">
+    <div class="logo-box"></div>
+    MAIKO<span>DIGITAL</span>
+</div>
+</header>
+
+<main>
+<section aria-label="Briefing hero">
+    <span class="badge">Intelligence Briefing</span>
+    <h1 class="hero-title">Maiko Lab: Technical Dispatches.</h1>
+    <p class="hero-sub">
+    Essays that train Google and serious buyers to treat you as a web engineering lab, not a generic freelancer.
+    </p>
+</section>
+
+<section aria-label="Articles" class="post-grid">
+    <article class="post-card">
+    <div class="post-meta">Security • 2026</div>
+    <h2 class="post-title">Why WordPress is a Security Risk for Kenyan Corporates in 2026</h2>
+    <p class="post-excerpt">
+        Plugin bloat, outdated themes, weak admin discipline, and local compliance pressure make “cheap WordPress builds” a direct threat to serious corporate reputations.
+    </p>
+    <a href="#" class="post-link">Read Intelligence</a>
+    </article>
+
+    <article class="post-card">
+    <div class="post-meta">Performance • Speed</div>
+    <h2 class="post-title">The Anatomy of a &lt;400ms Load Speed: How We Hand-Code for the African Edge</h2>
+    <p class="post-excerpt">
+        A breakdown of critical-path rendering, asset discipline, and network-aware design that allows Maiko pages to punch far above their weight on real African networks.
+    </p>
+    <a href="#" class="post-link">Read Intelligence</a>
+    </article>
+
+    <article class="post-card">
+    <div class="post-meta">Commerce • M-Pesa</div>
+    <h2 class="post-title">M-Pesa Funnels: How to Eliminate Friction in Kisii-Based Digital Commerce</h2>
+    <p class="post-excerpt">
+        From landing page copy to payment confirmation, we design M-Pesa funnels so a qualified visitor only has one obvious action: pay.
+    </p>
+    <a href="#" class="post-link">Read Intelligence</a>
+    </article>
+</section>
+</main>
+
+<script>
+const nav = document.getElementById("main-nav");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+    nav.classList.add("scrolled");
+    } else {
+    nav.classList.remove("scrolled");
+    }
+});
+</script>
+</body>
+</html>

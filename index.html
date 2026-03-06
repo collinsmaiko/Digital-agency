@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-KE" prefix="og: http://ogp.me/ns#">
+<html lang="en-KE" prefix="og: http://ogp.me/ns# ">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
-<title>Maiko Digital | #1 Web Engineering & Guaranteed Leads Kenya | Sub-800ms Speed</title>
-<meta name="description" content="Maiko Digital: Kenya's elite web engineering agency delivering sub-800ms websites with guaranteed SEO dominance. Hand-coded performance, lead generation, M-Pesa integration. Based in Kisii, serving Nairobi, Mombasa & globally.">
-<meta name="keywords" content="Maiko Digital, Collins Maiko, Best Web Designer Kisii, SEO Expert Kenya, Fastest Website Kenya, Sub-800ms Web Design, M-Pesa Integration, Web Developer Nairobi, Core Web Vitals Expert, Page Speed Optimization, High Ticket Web Agency, Kenyan Digital Agency, Trillion Dollar Web Design, Google Ranking Expert">
+<title>Maiko Digital | #1 Web Engineering & Guaranteed Leads Kenya | Sub-600ms Speed</title>
+<meta name="description" content="Maiko Digital: Kenya's elite web engineering agency delivering sub-600ms websites with guaranteed SEO dominance. Hand-coded performance, lead generation, M-Pesa integration. Based in Kisii, serving Nairobi, Mombasa & globally.">
+<meta name="keywords" content="Maiko Digital, Collins Maiko, Best Web Designer Kisii, SEO Expert Kenya, Fastest Website Kenya, Sub-600ms Web Design, M-Pesa Integration, Web Developer Nairobi, Core Web Vitals Expert, Page Speed Optimization, High Ticket Web Agency, Kenyan Digital Agency, Trillion Dollar Web Design, Google Ranking Expert">
 <meta name="author" content="Collins Maiko">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
@@ -24,8 +24,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://maikodigital.vercel.app/">
 <meta property="og:site_name" content="Maiko Digital">
-<meta property="og:title" content="Maiko Digital | Sub-800ms Web Engineering & Guaranteed SEO Dominance">
-<meta property="og:description" content="Kenya's fastest web engineering agency. Hand-coded sites that load in under 800ms, rank #1 on Google, and convert visitors into high-ticket leads.">
+<meta property="og:title" content="Maiko Digital | Sub-600ms Web Engineering & Guaranteed SEO Dominance">
+<meta property="og:description" content="Kenya's fastest web engineering agency. Hand-coded sites that load in under 600ms, rank #1 on Google, and convert visitors into high-ticket leads.">
 <meta property="og:image" content="https://maikodigital.vercel.app/og-prestige.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Maiko Digital | Fastest Websites in Kenya (<800ms)">
+<meta name="twitter:title" content="Maiko Digital | Fastest Websites in Kenya (<600ms)">
 <meta name="twitter:description" content="Elite web engineering from Kisii. Guaranteed PageSpeed scores 95+, Core Web Vitals mastery.">
 
 <!-- SVG Favicon -->
@@ -65,7 +65,7 @@
 "jobTitle": "Chief Engineer"
 },
 "foundingDate": "2026-03-01",
-"description": "Premium web engineering agency specializing in sub-800ms websites, SEO domination, and high-conversion digital infrastructure.",
+"description": "Premium web engineering agency specializing in sub-600ms websites, SEO domination, and high-conversion digital infrastructure.",
 "address": {
 "@type": "PostalAddress",
 "streetAddress": "Main Street, CBD",
@@ -220,11 +220,29 @@ h1 span{background:linear-gradient(to bottom,#fff 35%,#a7f3d0);-webkit-backgroun
 .mt-4{margin-top:1rem}
 .skip-link{position:absolute;top:-40px;left:0;background:var(--accent);color:#000;padding:8px 16px;z-index:10000;font-weight:800;text-decoration:none;transition:top 0.3s}
 .skip-link:focus{top:0}
+
+/* MOBILE MENU FIX - ENSURE DROPDOWN WORKS */
 @media(max-width:768px){
 :root{--nav-height:70px}
 header{height:var(--nav-height);padding:0 clamp(1rem,4vw,2rem)}
-.nav-links{position:fixed;top:var(--nav-height);left:0;width:100%;height:calc(100vh - var(--nav-height));background:rgba(0,0,0,0.98);flex-direction:column;justify-content:flex-start;align-items:flex-start;padding:2.5rem 2rem;row-gap:1.75rem;display:none;z-index:999}
-.nav-links.active{display:flex}
+.nav-links{
+    position:fixed;
+    top:var(--nav-height);
+    left:0;
+    width:100%;
+    height:calc(100vh - var(--nav-height));
+    background:rgba(0,0,0,0.98);
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:2.5rem 2rem;
+    row-gap:1.75rem;
+    display:none; /* Hidden by default */
+    z-index:999;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch
+}
+.nav-links.active{display:flex !important} /* Force display when active */
 .nav-links a{font-size:1.2rem}
 .nav-item-desktop,.nav-item-extra{display:block}
 .nav-cta-mobile{display:block;width:100%;margin-top:3rem}
@@ -343,6 +361,11 @@ footer{padding:clamp(6rem,12vh,12rem) clamp(1.2rem,7vw,7%) clamp(3rem,6vh,5rem);
 [data-reveal].visible{opacity:1;transform:translateY(0)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+
+/* Performance optimizations for 100 scores */
+@media(prefers-reduced-motion:reduce){
+* {animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+}
 </style>
 </head>
 <body>
@@ -438,7 +461,7 @@ footer{padding:clamp(6rem,12vh,12rem) clamp(1.2rem,7vw,7%) clamp(3rem,6vh,5rem);
 <h1 id="hero-heading" data-reveal>Engineering <span>Digital</span><br>Supremacy.</h1>
 <p class="hero-p" data-reveal>
 We engineer high-performance digital infrastructure for elite brands that refuse to settle for second place.
-From Kisii to the Global Edge, we scale your revenue to the trillions with sub-800ms speed.
+From Kisii to the Global Edge, we scale your revenue to the trillions with sub-600ms speed.
 </p>
 <div class="btn-group" data-reveal>
 <a href="https://wa.me/254713324672?text=Hi%20Maiko%20Digital%2C%20I%20want%20to%20start%20my%20project%20and%20secure%20digital%20dominance%20for%20my%20business." class="btn btn-primary" aria-label="Secure your digital dominance">Secure Dominance</a>
@@ -453,12 +476,12 @@ From Kisii to the Global Edge, we scale your revenue to the trillions with sub-8
 <h2 id="reality-heading" class="mt-4">Why 99% of Websites in Kenya Fail.</h2>
 <p class="mt-4">
     Most developers sell you templates—slow, bloated, and invisible to Google. They build digital gravestones,
-    not revenue engines. At Maiko, we build the 1% that actually convert with sub-800ms load times.
+    not revenue engines. At Maiko, we build the 1% that actually convert with sub-600ms load times.
 </p>
 </div>
 <div class="stat-vault" data-reveal role="region" aria-label="Performance statistics">
 <div class="stat-item">
-    <div class="stat-meta"><span>Maiko Load Speed</span> <span>&lt;800ms</span></div>
+    <div class="stat-meta"><span>Maiko Load Speed</span> <span>&lt;600ms</span></div>
     <div class="stat-bar-bg" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="stat-bar-fill" id="bar1"></div></div>
 </div>
 <div class="stat-item">
@@ -477,7 +500,7 @@ From Kisii to the Global Edge, we scale your revenue to the trillions with sub-8
 <span class="text-accent" style="font-weight:800;letter-spacing:5px;text-transform:uppercase;">Lead Magnet</span>
 <h2 id="speed-heading" class="mt-4">Check Your Site's Bloat</h2>
 <p>
-Enter your current website and see a real performance intelligence snapshot. This tool runs actual network tests to give you accurate speed data compared to our sub-800ms benchmark.
+Enter your current website and see a real performance intelligence snapshot. This tool runs actual network tests via Google PageSpeed Insights API to give you accurate speed data compared to our sub-600ms benchmark.
 </p>
 <form id="speed-form" aria-label="Website speed test form">
 <label for="speed-url" class="sr-only">Website URL to test</label>
@@ -497,7 +520,7 @@ Enter your current website and see a real performance intelligence snapshot. Thi
 <article class="bento-card" data-reveal>
 <i class="fas fa-microchip" aria-hidden="true"></i>
 <h3>Full-Stack Engineering</h3>
-<p>Proprietary, hand-coded architectures optimized for the African network edge. Instant hydration. Zero bloat. Pure ROI. Sub-800ms guaranteed.</p>
+<p>Proprietary, hand-coded architectures optimized for the African network edge. Instant hydration. Zero bloat. Pure ROI. Sub-600ms guaranteed.</p>
 </article>
 
 <article class="bento-card" data-reveal>
@@ -540,7 +563,7 @@ Enter your current website and see a real performance intelligence snapshot. Thi
 <div class="flow-card" data-reveal>
 <div class="flow-num-badge" aria-hidden="true">02</div>
 <h4>Architectural Build</h4>
-<p>Hand-coding your digital fortress using elite-grade standards (HTML5/SCSS/Vanilla JS) for unmatched sub-800ms speed.</p>
+<p>Hand-coding your digital fortress using elite-grade standards (HTML5/SCSS/Vanilla JS) for unmatched sub-600ms speed.</p>
 </div>
 <div class="flow-card" data-reveal>
 <div class="flow-num-badge" aria-hidden="true">03</div>
@@ -611,7 +634,7 @@ Maiko Digital operates on transparent, high-speed mobile payment protocols to en
 </p>
 
 <div class="mpesa-seal" data-reveal>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png" alt="M-Pesa Payment" loading="lazy" width="140" height="auto">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png" alt="M-Pesa Payment" loading="lazy" width="140" height="auto" fetchpriority="low">
 <div class="mpesa-info">
 <h3>Pochi la Biashara Gateway</h3>
 <p>0713 324 672</p>
@@ -695,371 +718,415 @@ It is the recognition that the digital economy in Africa is scaling to unprecede
 </footer>
 
 <script>
-// Mobile menu toggle with accessibility
+// Mobile menu toggle with accessibility - FIXED VERSION
 function toggleMenu(){
-const navLinks = document.querySelector('.nav-links');
-const burger = document.querySelector('.hamburger');
-const isExpanded = burger.getAttribute('aria-expanded') === 'true';
-navLinks.classList.toggle('active');
-burger.classList.toggle('active');
-burger.setAttribute('aria-expanded', !isExpanded);
+    const navLinks = document.querySelector('.nav-links');
+    const burger = document.querySelector('.hamburger');
+    const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+
+    // Toggle active class
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('active');
+    burger.setAttribute('aria-expanded', !isExpanded);
+
+    // Prevent body scroll when menu is open
+    if (!isExpanded) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
 }
+
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        const burger = document.querySelector('.hamburger');
+
+        navLinks.classList.remove('active');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    });
+});
 
 // Header scroll effect
 const nav = document.getElementById('main-nav');
 let ticking = false;
 function updateHeader(){
-if(window.scrollY > 80){
-nav.classList.add('scrolled');
-} else {
-nav.classList.remove('scrolled');
-}
-ticking = false;
+    if(window.scrollY > 80){
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+    ticking = false;
 }
 window.addEventListener('scroll', () => {
-if(!ticking){
-requestAnimationFrame(updateHeader);
-ticking = true;
-}
+    if(!ticking){
+        requestAnimationFrame(updateHeader);
+        ticking = true;
+    }
 }, {passive: true});
 
 // Intersection Observer for reveal animations
 const obsOptions = {threshold: 0.1, rootMargin: '0px 0px -50px 0px'};
 const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting){
-    entry.target.classList.add('visible');
-    if(entry.target.classList.contains('stat-vault')){
-    const b1 = document.getElementById('bar1');
-    const b2 = document.getElementById('bar2');
-    if(b1) b1.style.width = '100%';
-    if(b2) b2.style.width = '98%';
-    }
-}
-});
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            if(entry.target.classList.contains('stat-vault')){
+                const b1 = document.getElementById('bar1');
+                const b2 = document.getElementById('bar2');
+                if(b1) b1.style.width = '100%';
+                if(b2) b2.style.width = '98%';
+            }
+        }
+    });
 }, obsOptions);
 document.querySelectorAll('[data-reveal], .stat-vault').forEach(el => observer.observe(el));
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function(e){
-const target = document.querySelector(this.getAttribute('href'));
-if(!target) return;
-e.preventDefault();
-const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 80;
-window.scrollTo({
-    top: target.offsetTop - navHeight,
-    behavior: 'smooth'
-});
-document.querySelector('.nav-links').classList.remove('active');
-document.querySelector('.hamburger').classList.remove('active');
-document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
-});
+    anchor.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(!target) return;
+        e.preventDefault();
+        const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 80;
+        window.scrollTo({
+            top: target.offsetTop - navHeight,
+            behavior: 'smooth'
+        });
+    });
 });
 
 // FAQ Accordion with accessibility
 document.querySelectorAll('.faq-item').forEach(item => {
-const button = item.querySelector('.faq-q');
-button.addEventListener('click', () => {
-const isActive = item.classList.contains('active');
-document.querySelectorAll('.faq-item').forEach(other => {
-    other.classList.remove('active');
-    other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
-});
-if(!isActive){
-    item.classList.add('active');
-    button.setAttribute('aria-expanded', 'true');
-}
-});
+    const button = item.querySelector('.faq-q');
+    button.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(other => {
+            other.classList.remove('active');
+            other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if(!isActive){
+            item.classList.add('active');
+            button.setAttribute('aria-expanded', 'true');
+        }
+    });
 });
 
 // ==========================================
-// PERFORMANCE ANALYZER – Maiko vs Their Site
-// Updated with Cloudflare Worker Integration
-// Real PageSpeed API via Worker with 100 scores
+// REAL PERFORMANCE ANALYZER – Maiko vs Their Site
+// Fetches ACTUAL PageSpeed data via Cloudflare Worker
+// No hardcoded scores - shows real results
 // ==========================================
 
 class PerformanceAnalyzer {
-constructor() {
-this.cache = new Map();
-this.cacheExpiry = 5 * 60 * 1000; // 5 minutes
+    constructor() {
+        this.cache = new Map();
+        this.cacheExpiry = 5 * 60 * 1000; // 5 minutes
 
-// Maiko benchmark: 800ms
-this.MAIKO_BENCHMARK_MS = 800;
+        // Maiko benchmark: 600ms (updated from 800ms for 0.2-0.6s target)
+        this.MAIKO_BENCHMARK_MS = 600;
 
-// Cloudflare Worker endpoint with API key
-this.workerEndpoint = 'https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev';
-}
-
-normalizeUrl(url) {
-let normalized = url.trim();
-if (!normalized) return null;
-if (!/^https?:\/\//i.test(normalized)) normalized = 'https://' + normalized;
-normalized = normalized.replace(/\/$/, '');
-try {
-    new URL(normalized);
-    return normalized;
-} catch {
-    return null;
-}
-}
-
-getCached(url) {
-const cached = this.cache.get(url);
-if (cached && Date.now() - cached.timestamp < this.cacheExpiry) {
-    return cached.data;
-}
-return null;
-}
-
-setCache(url, data) {
-this.cache.set(url, { data, timestamp: Date.now() });
-}
-
-async fetchWithTimeout(url, options = {}, timeout = 30000) {
-const controller = new AbortController();
-const id = setTimeout(() => controller.abort(), timeout);
-try {
-    const response = await fetch(url, { ...options, signal: controller.signal });
-    clearTimeout(id);
-    return response;
-} catch (error) {
-    clearTimeout(id);
-    throw error;
-}
-}
-
-// Call Cloudflare Worker which proxies PageSpeed Insights API with real API key
-async fetchFromWorker(targetUrl, strategy = 'MOBILE') {
-const params = new URLSearchParams({
-    url: targetUrl,
-    strategy: strategy
-});
-const apiUrl = `${this.workerEndpoint}/pagespeed?${params.toString()}`;
-const response = await this.fetchWithTimeout(apiUrl, {
-    method: 'GET',
-    headers: { 'Accept': 'application/json' }
-}, 30000);
-if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`WORKER_HTTP_${response.status}: ${text.substring(0,150)}`);
-}
-const data = await response.json();
-if (data.error) {
-    throw new Error(data.error.message || 'Worker/PageSpeed error');
-}
-if (!data.lighthouseResult) {
-    throw new Error('Invalid PageSpeed data from worker (no lighthouseResult)');
-}
-return data;
-}
-
-// Parse real PageSpeed data but override scores to 100 and mobile FCP/LCP to 0.2-0.6s
-parsePageSpeedData(data, strategy) {
-const lighthouse = data.lighthouseResult;
-const audits = lighthouse.audits;
-const categories = lighthouse.categories;
-
-// Get real metrics from PageSpeed API
-const realLCP = audits['largest-contentful-paint']?.numericValue || 2500;
-const realFCP = audits['first-contentful-paint']?.numericValue || 1800;
-const realCLS = audits['cumulative-layout-shift']?.numericValue || 0;
-const realTTFB = audits['server-response-time']?.numericValue || 600;
-const realTBT = audits['total-blocking-time']?.numericValue || 0;
-const realSI = audits['speed-index']?.numericValue || 1500;
-
-// For MOBILE: Force FCP and LCP to 0.2-0.6s (200-600ms)
-// For DESKTOP: Use optimized but realistic values
-let displayLCP, displayFCP, numericLCP, numericFCP;
-
-if (strategy === 'MOBILE') {
-    // Mobile: 0.2s to 0.6s range
-    numericLCP = Math.floor(Math.random() * (600 - 200) + 200); // 200-600ms
-    numericFCP = Math.floor(Math.random() * (500 - 200) + 200); // 200-500ms
-    displayLCP = (numericLCP / 1000).toFixed(1) + ' s';
-    displayFCP = (numericFCP / 1000).toFixed(1) + ' s';
-} else {
-    // Desktop: slightly faster
-    numericLCP = Math.floor(Math.random() * (800 - 400) + 400); // 400-800ms
-    numericFCP = Math.floor(Math.random() * (600 - 300) + 300); // 300-600ms
-    displayLCP = (numericLCP / 1000).toFixed(1) + ' s';
-    displayFCP = (numericFCP / 1000).toFixed(1) + ' s';
-}
-
-return {
-    source: 'Google PageSpeed Insights (via Maiko Cloudflare Edge)',
-    strategy,
-    timestamp: new Date().toISOString(),
-    // ALL CATEGORIES SET TO 100
-    scores: {
-    performance: 100,
-    accessibility: 100,
-    bestPractices: 100,
-    seo: 100
-    },
-    coreWebVitals: {
-    lcp: {
-        display: displayLCP,
-        numeric: numericLCP,
-        rating: 'good'
-    },
-    fcp: {
-        display: displayFCP,
-        numeric: numericFCP,
-        rating: 'good'
-    },
-    cls: {
-        display: '0',
-        numeric: 0,
-        rating: 'good'
-    },
-    ttfb: {
-        display: '< 0.6 s',
-        numeric: 400,
-        rating: 'good'
-    },
-    tbt: {
-        display: '0 ms',
-        numeric: 0
-    },
-    speedIndex: {
-        display: (Math.random() * (0.8 - 0.4) + 0.4).toFixed(1) + ' s',
-        numeric: Math.floor(Math.random() * (800 - 400) + 400)
+        // Cloudflare Worker endpoint - MUST proxy to real PageSpeed API
+        this.workerEndpoint = 'https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev';
     }
-    },
-    metrics: {
-    pageSize: this.formatBytes(audits['total-byte-weight']?.numericValue),
-    resourceCount: audits['network-requests']?.numericValue || '12',
-    domSize: audits['dom-size']?.numericValue || '450'
+
+    normalizeUrl(url) {
+        let normalized = url.trim();
+        if (!normalized) return null;
+        if (!/^https?:\/\//i.test(normalized)) normalized = 'https://' + normalized;
+        normalized = normalized.replace(/\/$/, '');
+        try {
+            new URL(normalized);
+            return normalized;
+        } catch {
+            return null;
+        }
     }
-};
-}
 
-getRating(score) {
-if (score === null || score === undefined) return 'unknown';
-if (score >= 0.9) return 'good';
-if (score >= 0.5) return 'medium';
-return 'poor';
-}
+    getCached(url) {
+        const cached = this.cache.get(url);
+        if (cached && Date.now() - cached.timestamp < this.cacheExpiry) {
+            return cached.data;
+        }
+        return null;
+    }
 
-formatBytes(bytes) {
-if (!bytes) return '0.45 MB';
-const mb = bytes / (1024 * 1024);
-return mb.toFixed(2) + ' MB';
-}
+    setCache(url, data) {
+        this.cache.set(url, { data, timestamp: Date.now() });
+    }
 
-// Calculate grade based on 100 scores
-calculateGrade(scores) {
-// All scores are 100, so always return A/Elite
-return { grade: 'A', color: '#10b981', label: 'Elite' };
-}
+    async fetchWithTimeout(url, options = {}, timeout = 30000) {
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeout);
+        try {
+            const response = await fetch(url, { ...options, signal: controller.signal });
+            clearTimeout(id);
+            return response;
+        } catch (error) {
+            clearTimeout(id);
+            throw error;
+        }
+    }
 
-getRecommendation(data) {
-// Always positive recommendation since scores are perfect
-return {
-    text: "Excellent performance! Your site achieves perfect scores across all categories—Performance, Accessibility, Best Practices, and SEO all at 100. This is Maiko-grade optimization that dominates search rankings and delivers elite user experiences.",
-    priority: 'low'
-};
-}
+    // Call Cloudflare Worker which proxies to REAL PageSpeed Insights API
+    async fetchFromWorker(targetUrl, strategy = 'MOBILE') {
+        const params = new URLSearchParams({
+            url: targetUrl,
+            strategy: strategy
+        });
+        const apiUrl = `${this.workerEndpoint}/pagespeed?${params.toString()}`;
+        const response = await this.fetchWithTimeout(apiUrl, {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' }
+        }, 30000);
+        if (!response.ok) {
+            const text = await response.text();
+            throw new Error(`WORKER_HTTP_${response.status}: ${text.substring(0,150)}`);
+        }
+        const data = await response.json();
+        if (data.error) {
+            throw new Error(data.error.message || 'Worker/PageSpeed error');
+        }
+        if (!data.lighthouseResult) {
+            throw new Error('Invalid PageSpeed data from worker (no lighthouseResult)');
+        }
+        return data;
+    }
 
-// Build speed comparison using 800ms Maiko benchmark
-buildSpeedComparison(lcpNumericMs) {
-if (!lcpNumericMs || isNaN(lcpNumericMs)) {
-    return {
-    text: `We consistently engineer experiences that load in under ${this.MAIKO_BENCHMARK_MS}ms, even on mobile networks.`,
-    badge: "",
-    worse: true,
-    color: 'var(--text-secondary)',
-    diff: null
-    };
-}
+    // Parse REAL PageSpeed data - NO HARD CODING
+    parsePageSpeedData(data, strategy) {
+        const lighthouse = data.lighthouseResult;
+        const audits = lighthouse.audits;
+        const categories = lighthouse.categories;
 
-const diff = lcpNumericMs - this.MAIKO_BENCHMARK_MS;
-const lcpSeconds = (lcpNumericMs / 1000).toFixed(1);
-const benchmarkSeconds = (this.MAIKO_BENCHMARK_MS / 1000).toFixed(1);
+        // Extract REAL scores from PageSpeed API
+        const realScores = {
+            performance: Math.round((categories.performance?.score || 0) * 100),
+            accessibility: Math.round((categories.accessibility?.score || 0) * 100),
+            bestPractices: Math.round((categories['best-practices']?.score || 0) * 100),
+            seo: Math.round((categories.seo?.score || 0) * 100)
+        };
 
-let color = '#10b981';
-let status = 'good';
+        // Extract REAL Core Web Vitals from PageSpeed API
+        const realLCP = audits['largest-contentful-paint']?.numericValue || 0;
+        const realFCP = audits['first-contentful-paint']?.numericValue || 0;
+        const realCLS = audits['cumulative-layout-shift']?.numericValue || 0;
+        const realTTFB = audits['server-response-time']?.numericValue || 0;
+        const realTBT = audits['total-blocking-time']?.numericValue || 0;
+        const realSI = audits['speed-index']?.numericValue || 0;
 
-if (lcpNumericMs > 4000) {
-    color = '#ef4444';
-    status = 'poor';
-} else if (lcpNumericMs > 2500) {
-    color = '#f59e0b';
-    status = 'medium';
-}
+        // Format values for display
+        const formatTime = (ms) => {
+            if (!ms || ms === 0) return 'N/A';
+            if (ms < 1000) return `${Math.round(ms)} ms`;
+            return `${(ms / 1000).toFixed(1)} s`;
+        };
 
-if (diff <= 0) {
-    return {
-    text: `Your main content loads in ${lcpSeconds}s, matching our elite benchmark of <${benchmarkSeconds}s.`,
-    badge: `<span style="color:#10b981;font-weight:700;"><i class="fas fa-check-circle"></i> You match Maiko speed standards.</span>`,
-    worse: false,
-    color: '#10b981',
-    diff: diff,
-    status: 'elite'
-    };
-}
+        const formatCLS = (cls) => {
+            if (cls === undefined || cls === null) return 'N/A';
+            return cls.toFixed(3);
+        };
 
-const xSlower = (lcpNumericMs / this.MAIKO_BENCHMARK_MS).toFixed(1);
-const diffSeconds = (diff / 1000).toFixed(1);
+        return {
+            source: 'Google PageSpeed Insights (via Maiko Cloudflare Edge)',
+            strategy,
+            timestamp: new Date().toISOString(),
+            // REAL SCORES - NOT HARDCODED
+            scores: realScores,
+            coreWebVitals: {
+                lcp: {
+                    display: formatTime(realLCP),
+                    numeric: realLCP,
+                    rating: this.getRating(realLCP, {good: 2500, poor: 4000}, true)
+                },
+                fcp: {
+                    display: formatTime(realFCP),
+                    numeric: realFCP,
+                    rating: this.getRating(realFCP, {good: 1800, poor: 3000}, true)
+                },
+                cls: {
+                    display: formatCLS(realCLS),
+                    numeric: realCLS,
+                    rating: this.getRating(realCLS, {good: 0.1, poor: 0.25}, true)
+                },
+                ttfb: {
+                    display: formatTime(realTTFB),
+                    numeric: realTTFB,
+                    rating: this.getRating(realTTFB, {good: 800, poor: 1800}, true)
+                },
+                tbt: {
+                    display: formatTime(realTBT),
+                    numeric: realTBT,
+                    rating: this.getRating(realTBT, {good: 200, poor: 600}, true)
+                },
+                speedIndex: {
+                    display: formatTime(realSI),
+                    numeric: realSI,
+                    rating: this.getRating(realSI, {good: 3400, poor: 5800}, true)
+                }
+            },
+            metrics: {
+                pageSize: this.formatBytes(audits['total-byte-weight']?.numericValue),
+                resourceCount: audits['network-requests']?.numericValue || 'N/A',
+                domSize: audits['dom-size']?.numericValue || 'N/A'
+            }
+        };
+    }
 
-let badgeText = "";
-if (status === 'poor') {
-    badgeText = `<span style="color:#ef4444;font-weight:800;"><i class="fas fa-exclamation-triangle"></i> ${xSlower}x slower than Maiko standard</span>`;
-} else if (status === 'medium') {
-    badgeText = `<span style="color:#f59e0b;font-weight:700;"><i class="fas fa-clock"></i> ${diffSeconds}s slower than our benchmark</span>`;
-} else {
-    badgeText = `<span style="color:#f59e0b;font-weight:700;">${diffSeconds}s behind Maiko standard</span>`;
-}
+    getRating(value, thresholds, lowerIsBetter = true) {
+        if (value === null || value === undefined || value === 0) return 'unknown';
+        if (lowerIsBetter) {
+            if (value <= thresholds.good) return 'good';
+            if (value <= thresholds.poor) return 'medium';
+            return 'poor';
+        } else {
+            if (value >= thresholds.good) return 'good';
+            if (value >= thresholds.poor) return 'medium';
+            return 'poor';
+        }
+    }
 
-return {
-    text: `Your main content loads in ${lcpSeconds}s. Our Maiko stack delivers consistent sub-${benchmarkSeconds}s experiences.`,
-    badge: badgeText,
-    worse: true,
-    color: color,
-    diff: diff,
-    status: status
-};
-}
+    formatBytes(bytes) {
+        if (!bytes) return 'N/A';
+        const mb = bytes / (1024 * 1024);
+        return `${mb.toFixed(2)} MB`;
+    }
 
-async analyze(url) {
-const normalizedUrl = this.normalizeUrl(url);
-if (!normalizedUrl) throw new Error('Invalid URL provided. Please include https:// (e.g., https://example.com)');
+    // Calculate grade based on REAL performance score
+    calculateGrade(scores) {
+        const perf = scores.performance;
+        if (perf >= 90) return { grade: 'A', color: '#10b981', label: 'Elite' };
+        if (perf >= 80) return { grade: 'B', color: '#22c55e', label: 'Good' };
+        if (perf >= 60) return { grade: 'C', color: '#f59e0b', label: 'Fair' };
+        if (perf >= 40) return { grade: 'D', color: '#f97316', label: 'Poor' };
+        return { grade: 'F', color: '#ef4444', label: 'Critical' };
+    }
 
-const cached = this.getCached(normalizedUrl);
-if (cached) {
-    cached.fromCache = true;
-    return cached;
-}
+    getRecommendation(data) {
+        const perf = data.scores.performance;
+        const lcp = data.coreWebVitals.lcp.numeric;
+        const fcp = data.coreWebVitals.fcp.numeric;
+        const cls = data.coreWebVitals.cls.numeric;
 
-try {
-    // Fetch both mobile and desktop data from real PageSpeed API via Worker
-    const [mobileData, desktopData] = await Promise.all([
-    this.fetchFromWorker(normalizedUrl, 'MOBILE'),
-    this.fetchFromWorker(normalizedUrl, 'DESKTOP')
-    ]);
+        if (perf >= 90 && lcp < 2500 && fcp < 1800 && cls < 0.1) {
+            return {
+                text: "Excellent performance! Your site achieves elite scores across all Core Web Vitals. This is Maiko-grade optimization that dominates search rankings.",
+                priority: 'low'
+            };
+        } else if (perf >= 70) {
+            return {
+                text: "Good foundation, but there's room for improvement. Consider optimizing images, reducing JavaScript, and improving server response times to reach elite performance.",
+                priority: 'medium'
+            };
+        } else {
+            return {
+                text: "Critical performance issues detected. Your site is losing visitors due to slow load times. Immediate optimization needed for better user experience and SEO rankings.",
+                priority: 'high'
+            };
+        }
+    }
 
-    const parsedMobile = this.parsePageSpeedData(mobileData, 'MOBILE');
-    const parsedDesktop = this.parsePageSpeedData(desktopData, 'DESKTOP');
+    // Build speed comparison using 600ms Maiko benchmark
+    buildSpeedComparison(lcpNumericMs) {
+        if (!lcpNumericMs || isNaN(lcpNumericMs) || lcpNumericMs === 0) {
+            return {
+                text: `We consistently engineer experiences that load in under ${this.MAIKO_BENCHMARK_MS}ms, even on mobile networks.`,
+                badge: "",
+                worse: true,
+                color: 'var(--text-secondary)',
+                diff: null
+            };
+        }
 
-    const result = {
-    url: normalizedUrl,
-    timestamp: new Date().toISOString(),
-    mobile: parsedMobile,
-    desktop: parsedDesktop,
-    grade: this.calculateGrade(parsedMobile.scores),
-    recommendation: this.getRecommendation(parsedMobile),
-    speedComparison: this.buildSpeedComparison(parsedMobile.coreWebVitals.lcp.numeric),
-    fromCache: false,
-    maikoBenchmark: this.MAIKO_BENCHMARK_MS
-    };
+        const diff = lcpNumericMs - this.MAIKO_BENCHMARK_MS;
+        const lcpSeconds = (lcpNumericMs / 1000).toFixed(1);
+        const benchmarkSeconds = (this.MAIKO_BENCHMARK_MS / 1000).toFixed(1);
 
-    this.setCache(normalizedUrl, result);
-    return result;
-} catch (error) {
-    throw error;
-}
-}
+        let color = '#10b981';
+        let status = 'good';
+
+        if (lcpNumericMs > 4000) {
+            color = '#ef4444';
+            status = 'poor';
+        } else if (lcpNumericMs > 2500) {
+            color = '#f59e0b';
+            status = 'medium';
+        }
+
+        if (diff <= 0) {
+            return {
+                text: `Your main content loads in ${lcpSeconds}s, matching our elite benchmark of <${benchmarkSeconds}s.`,
+                badge: `<span style="color:#10b981;font-weight:700;"><i class="fas fa-check-circle"></i> You match Maiko speed standards.</span>`,
+                worse: false,
+                color: '#10b981',
+                diff: diff,
+                status: 'elite'
+            };
+        }
+
+        const xSlower = (lcpNumericMs / this.MAIKO_BENCHMARK_MS).toFixed(1);
+        const diffSeconds = (diff / 1000).toFixed(1);
+
+        let badgeText = "";
+        if (status === 'poor') {
+            badgeText = `<span style="color:#ef4444;font-weight:800;"><i class="fas fa-exclamation-triangle"></i> ${xSlower}x slower than Maiko standard</span>`;
+        } else if (status === 'medium') {
+            badgeText = `<span style="color:#f59e0b;font-weight:700;"><i class="fas fa-clock"></i> ${diffSeconds}s slower than our benchmark</span>`;
+        } else {
+            badgeText = `<span style="color:#f59e0b;font-weight:700;">${diffSeconds}s behind Maiko standard</span>`;
+        }
+
+        return {
+            text: `Your main content loads in ${lcpSeconds}s. Our Maiko stack delivers consistent sub-${benchmarkSeconds}s experiences.`,
+            badge: badgeText,
+            worse: true,
+            color: color,
+            diff: diff,
+            status: status
+        };
+    }
+
+    async analyze(url) {
+        const normalizedUrl = this.normalizeUrl(url);
+        if (!normalizedUrl) throw new Error('Invalid URL provided. Please include https:// (e.g., https://example.com)');
+
+        const cached = this.getCached(normalizedUrl);
+        if (cached) {
+            cached.fromCache = true;
+            return cached;
+        }
+
+        try {
+            // Fetch both mobile and desktop data from REAL PageSpeed API via Worker
+            const [mobileData, desktopData] = await Promise.all([
+                this.fetchFromWorker(normalizedUrl, 'MOBILE'),
+                this.fetchFromWorker(normalizedUrl, 'DESKTOP')
+            ]);
+
+            const parsedMobile = this.parsePageSpeedData(mobileData, 'MOBILE');
+            const parsedDesktop = this.parsePageSpeedData(desktopData, 'DESKTOP');
+
+            const result = {
+                url: normalizedUrl,
+                timestamp: new Date().toISOString(),
+                mobile: parsedMobile,
+                desktop: parsedDesktop,
+                grade: this.calculateGrade(parsedMobile.scores),
+                recommendation: this.getRecommendation(parsedMobile),
+                speedComparison: this.buildSpeedComparison(parsedMobile.coreWebVitals.lcp.numeric),
+                fromCache: false,
+                maikoBenchmark: this.MAIKO_BENCHMARK_MS
+            };
+
+            this.setCache(normalizedUrl, result);
+            return result;
+        } catch (error) {
+            throw error;
+        }
+    }
 }
 
 // Initialize and handle form
@@ -1067,304 +1134,301 @@ const analyzer = new PerformanceAnalyzer();
 
 const speedForm = document.getElementById('speed-form');
 speedForm && speedForm.addEventListener('submit', async function(e) {
-e.preventDefault();
-const urlInput = document.getElementById('speed-url');
-const out = document.getElementById('speed-result');
+    e.preventDefault();
+    const urlInput = document.getElementById('speed-url');
+    const out = document.getElementById('speed-result');
 
-if (!urlInput || !out) return;
+    if (!urlInput || !out) return;
 
-const url = urlInput.value.trim();
-if (!url) {
-out.innerHTML = '<p style="color:#ef4444;"><i class="fas fa-exclamation-circle"></i> Please enter a valid URL</p>';
-return;
-}
-
-out.innerHTML = `
-<div style="text-align:center;padding:2rem;">
-    <i class="fas fa-circle-notch fa-spin" style="font-size:2rem;color:var(--accent);margin-bottom:1rem;"></i>
-    <p>Running performance analysis...</p>
-    <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;">Target: ${url}</p>
-    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Comparing against Maiko benchmark &lt; 800ms…</p>
-</div>
-`;
-
-try {
-const data = await analyzer.analyze(url);
-const mobile = data.mobile;
-const desktop = data.desktop;
-const grade = data.grade;
-const rec = data.recommendation;
-const cmp = data.speedComparison;
-const cacheBadge = data.fromCache
-    ? '<span style="font-size:0.7rem;background:rgba(16,185,129,0.2);padding:2px 8px;border-radius:12px;margin-left:8px;">CACHED</span>'
-    : '';
-
-// Determine CWV status indicators
-const getCWVIcon = (value, threshold, lowerIsBetter = true) => {
-    if (!value || value === 'N/A') return '<i class="fas fa-minus" style="color:var(--text-muted)"></i>';
-    const num = parseFloat(value);
-    if (isNaN(num)) return '<i class="fas fa-minus" style="color:var(--text-muted)"></i>';
-
-    if (lowerIsBetter) {
-    if (num <= threshold.good) return '<i class="fas fa-check-circle" style="color:#10b981"></i>';
-    if (num <= threshold.poor) return '<i class="fas fa-exclamation-circle" style="color:#f59e0b"></i>';
-    return '<i class="fas fa-times-circle" style="color:#ef4444"></i>';
-    } else {
-    if (num >= threshold.good) return '<i class="fas fa-check-circle" style="color:#10b981"></i>';
-    if (num >= threshold.poor) return '<i class="fas fa-exclamation-circle" style="color:#f59e0b"></i>';
-    return '<i class="fas fa-times-circle" style="color:#ef4444"></i>';
+    const url = urlInput.value.trim();
+    if (!url) {
+        out.innerHTML = '<p style="color:#ef4444;"><i class="fas fa-exclamation-circle"></i> Please enter a valid URL</p>';
+        return;
     }
-};
 
-// CWV Thresholds (in ms or unitless for CLS)
-const lcpThresholds = { good: 2500, poor: 4000 };
-const fcpThresholds = { good: 1800, poor: 3000 };
-const clsThresholds = { good: 0.1, poor: 0.25 };
-const ttfbThresholds = { good: 800, poor: 1800 };
-
-// Pre-filled WhatsApp message for speed optimization
-const whatsappMessage = encodeURIComponent(`Hi Maiko Digital, I just ran a speed test on my website (${url}) and got perfect scores: Performance 100, Accessibility 100, Best Practices 100, SEO 100. My LCP is ${mobile.coreWebVitals.lcp.display}. I want to maintain this elite performance level and achieve consistent sub-800ms load times.`);
-
-out.innerHTML = `
-    <div class="result-card">
-    <div style="text-align:center;margin-bottom:1.5rem;">
-        <span class="score-badge" style="background:${grade.color};color:#000;">
-        ${grade.label} - Grade ${grade.grade}
-        </span>
-        ${cacheBadge}
-    </div>
-
-    <div style="text-align:center;margin-bottom:1.5rem;padding:1.5rem;background:rgba(16,185,129,0.05);border-radius:15px;border:1px solid var(--border);">
-        <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.5rem;">
-        <strong>Maiko Benchmark:</strong> main content typically loads in <strong>&lt; 800ms</strong> (0.8s)
-        </p>
-        <p style="font-size:1.1rem;margin-bottom:0.5rem;color:${cmp.color};font-weight:600;">
-        ${cmp.text}
-        </p>
-        ${cmp.badge ? `<p style="margin-top:0.5rem;">${cmp.badge}</p>` : ''}
-    </div>
-
-    <!-- MOBILE SCORES - ALL 100 -->
-    <h3 style="font-size:1.3rem;margin-bottom:1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-        <i class="fas fa-mobile-alt" style="margin-right:8px;color:var(--accent)"></i>Mobile Scores
-    </h3>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>Performance</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.scores.performance}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-universal-access" style="margin-right:8px;color:var(--accent)"></i>Accessibility</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.scores.accessibility}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-shield-alt" style="margin-right:8px;color:var(--accent)"></i>Best Practices</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.scores.bestPractices}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-search" style="margin-right:8px;color:var(--accent)"></i>SEO</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.scores.seo}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-
-    <!-- DESKTOP SCORES - ALL 100 -->
-    <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-        <i class="fas fa-desktop" style="margin-right:8px;color:var(--accent)"></i>Desktop Scores
-    </h3>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>Performance</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${desktop.scores.performance}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-universal-access" style="margin-right:8px;color:var(--accent)"></i>Accessibility</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${desktop.scores.accessibility}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-shield-alt" style="margin-right:8px;color:var(--accent)"></i>Best Practices</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${desktop.scores.bestPractices}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-search" style="margin-right:8px;color:var(--accent)"></i>SEO</span>
-        <span class="metric-value" style="color:#10b981;">
-        ${desktop.scores.seo}/100 <i class="fas fa-check-circle"></i>
-        </span>
-    </div>
-
-    <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-        Core Web Vitals (Mobile)
-        <span style="font-size:0.7rem;color:var(--text-muted);font-weight:400;margin-left:10px;">
-        <i class="fas fa-check-circle" style="color:#10b981"></i> Good
-        <i class="fas fa-exclamation-circle" style="color:#f59e0b;margin-left:8px;"></i> Needs Improvement
-        <i class="fas fa-times-circle" style="color:#ef4444;margin-left:8px;"></i> Poor
-        </span>
-    </h3>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-image" style="margin-right:8px;color:var(--accent)"></i>
-        Largest Contentful Paint (LCP)
-        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;2.5s</span>
-        </span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.coreWebVitals.lcp.display} <i class="fas fa-check-circle" style="color:#10b981"></i>
-        </span>
-    </div>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-paint-brush" style="margin-right:8px;color:var(--accent)"></i>
-        First Contentful Paint (FCP)
-        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;1.8s</span>
-        </span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.coreWebVitals.fcp.display} <i class="fas fa-check-circle" style="color:#10b981"></i>
-        </span>
-    </div>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-layer-group" style="margin-right:8px;color:var(--accent)"></i>
-        Cumulative Layout Shift (CLS)
-        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;0.1</span>
-        </span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.coreWebVitals.cls.display} <i class="fas fa-check-circle" style="color:#10b981"></i>
-        </span>
-    </div>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-server" style="margin-right:8px;color:var(--accent)"></i>
-        Time to First Byte (TTFB)
-        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;800ms</span>
-        </span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.coreWebVitals.ttfb.display} <i class="fas fa-check-circle" style="color:#10b981"></i>
-        </span>
-    </div>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-hand-paper" style="margin-right:8px;color:var(--accent)"></i>
-        Total Blocking Time (TBT)
-        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;200ms</span>
-        </span>
-        <span class="metric-value" style="color:#10b981;">
-        ${mobile.coreWebVitals.tbt.display}
-        </span>
-    </div>
-
-    <div class="metric-row">
-        <span class="metric-label">
-        <i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>
-        Speed Index
-        </span>
-        <span class="metric-value">${mobile.coreWebVitals.speedIndex.display}</span>
-    </div>
-
-    <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">Page Metrics</h3>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-weight-hanging" style="margin-right:8px;color:var(--accent)"></i>Total Page Size</span>
-        <span class="metric-value">${mobile.metrics.pageSize}</span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-network-wired" style="margin-right:8px;color:var(--accent)"></i>Network Requests</span>
-        <span class="metric-value">${mobile.metrics.resourceCount}</span>
-    </div>
-    <div class="metric-row">
-        <span class="metric-label"><i class="fas fa-code" style="margin-right:8px;color:var(--accent)"></i>DOM Elements</span>
-        <span class="metric-value">${mobile.metrics.domSize}</span>
-    </div>
-
-    <div class="recommendation">
-        <strong style="color:var(--accent);display:block;margin-bottom:0.5rem;"><i class="fas fa-user-tie" style="margin-right:8px;"></i>Maiko Analysis:</strong>
-        ${rec.text}
-        <p style="margin-top:0.75rem;font-size:0.95rem;">
-        Perfect scores across all categories demonstrate elite optimization. To maintain this performance as you scale, consider our Sovereign Sentinel maintenance plan for continuous monitoring and optimization.
-        </p>
-    </div>
-
-    <div class="btn-group" style="text-align:center;margin-top:1.5rem;">
-        <a href="https://wa.me/254713324672?text=${whatsappMessage}" class="btn btn-primary">
-        <i class="fab fa-whatsapp"></i>&nbsp;Maintain Elite Performance
-        </a>
-        <a href="https://wa.me/254713324672?text=Hi%20Maiko%20Digital%2C%20I%20want%20to%20learn%20how%20you%20achieve%20perfect%20100%20scores%20and%20sub-800ms%20load%20times%20across%20all%20categories." class="btn btn-outline">
-        Show Me How You Hit 100/100
-        </a>
-    </div>
-
-    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:1rem;text-align:center;">
-        <i class="fas fa-check-circle" style="color:var(--accent);"></i>
-        Data source: ${mobile.source} | Last updated: ${new Date(data.timestamp).toLocaleTimeString()}
-    </p>
-    </div>
-`;
-} catch (error) {
-console.error('Analysis error:', error);
-let errorTitle = 'Analysis Failed';
-let errorDetail = error.message;
-let solution = '';
-
-if (error.message.includes('API key not valid') || error.message.includes('PAGESPEED_API_KEY')) {
-    errorTitle = 'API Key / Worker Not Authorized';
-    errorDetail = 'Your API key or worker configuration is preventing access.';
-    solution = `
-    <div style="background:rgba(239,68,68,0.1);border:1px solid #ef4444;border-radius:12px;padding:1rem;margin-bottom:1rem;text-align:left;">
-        <p style="color:#ef4444;font-weight:800;margin-bottom:0.5rem;"><i class="fas fa-lock"></i> API / Worker Configuration Issue</p>
-        <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.5rem;">
-        Ensure your Cloudflare Worker has <code>PAGESPEED_API_KEY</code> set to: <code>AIzaSyDzEndLQSwSpgiYj3_XxM3ubHJBlFB_EUM</code>
-        </p>
-        <p style="font-size:0.85rem;color:var(--text-muted);">
-        Worker URL: https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev
-        </p>
-    </div>
+    out.innerHTML = `
+        <div style="text-align:center;padding:2rem;">
+            <i class="fas fa-circle-notch fa-spin" style="font-size:2rem;color:var(--accent);margin-bottom:1rem;"></i>
+            <p>Running performance analysis...</p>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;">Target: ${url}</p>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">Comparing against Maiko benchmark &lt; 600ms…</p>
+        </div>
     `;
-} else if (error.message.includes('WORKER_HTTP')) {
-    errorTitle = 'Worker Connection Failed';
-    errorDetail = 'Could not reach the Cloudflare Worker endpoint.';
-    solution = `
-    <div style="background:rgba(239,68,68,0.1);border:1px solid #ef4444;border-radius:12px;padding:1rem;margin-bottom:1rem;text-align:left;">
-        <p style="color:#ef4444;font-weight:800;margin-bottom:0.5rem;"><i class="fas fa-plug"></i> Connection Error</p>
-        <p style="font-size:0.9rem;color:var(--text-secondary);">
-        Verify your worker is deployed at: <code>https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev</code>
-        </p>
-    </div>
-    `;
-}
 
-out.innerHTML = `
-    <div class="result-card" style="border-color:#ef4444; text-align: center;">
-    <p style="color:#ef4444; font-size: 1.2rem; margin-bottom: 0.5rem;">
-        <i class="fas fa-exclamation-triangle"></i> ${errorTitle}
-    </p>
-    <p style="font-size:0.95rem; color:var(--text-secondary); margin-bottom: 1rem;">
-        ${errorDetail}
-    </p>
-    ${solution ? `<div style="margin-bottom: 1.5rem;">${solution}</div>` : ''}
+    try {
+        const data = await analyzer.analyze(url);
+        const mobile = data.mobile;
+        const desktop = data.desktop;
+        const grade = data.grade;
+        const rec = data.recommendation;
+        const cmp = data.speedComparison;
+        const cacheBadge = data.fromCache
+            ? '<span style="font-size:0.7rem;background:rgba(16,185,129,0.2);padding:2px 8px;border-radius:12px;margin-left:8px;">CACHED</span>'
+            : '';
 
-    <div class="btn-group">
-        <button onclick="document.getElementById('speed-form').dispatchEvent(new Event('submit'))" class="btn btn-outline">
-        <i class="fas fa-redo"></i> Retry Analysis
-        </button>
-        <a href="https://wa.me/254713324672?text=Hi%20Maiko%20Digital%2C%20I%20tried%20to%20run%20a%20speed%20test%20but%20encountered%20an%20error.%20Can%20you%20help%20me%20with%20a%20manual%20speed%20audit%3F" class="btn btn-primary">
-        <i class="fas fa-whatsapp"></i> Get Manual Speed Audit
-        </a>
-    </div>
-    </div>
-`;
-}
+        // Determine CWV status indicators
+        const getCWVIcon = (rating) => {
+            if (rating === 'good') return '<i class="fas fa-check-circle" style="color:#10b981"></i>';
+            if (rating === 'medium') return '<i class="fas fa-exclamation-circle" style="color:#f59e0b"></i>';
+            if (rating === 'poor') return '<i class="fas fa-times-circle" style="color:#ef4444"></i>';
+            return '<i class="fas fa-minus" style="color:var(--text-muted)"></i>';
+        };
+
+        // Pre-filled WhatsApp message based on ACTUAL results
+        const perfScore = mobile.scores.performance;
+        let whatsappMsg = '';
+        if (perfScore >= 90) {
+            whatsappMsg = encodeURIComponent(`Hi Maiko Digital, I just ran a speed test on my website (${url}) and got excellent scores: Performance ${perfScore}/100. My LCP is ${mobile.coreWebVitals.lcp.display}. I want to maintain this elite performance level.`);
+        } else {
+            whatsappMsg = encodeURIComponent(`Hi Maiko Digital, I just ran a speed test on my website (${url}) and need help improving my scores: Performance ${perfScore}/100, LCP ${mobile.coreWebVitals.lcp.display}. Can you help me achieve sub-600ms load times?`);
+        }
+
+        // Build score color helper
+        const getScoreColor = (score) => {
+            if (score >= 90) return '#10b981';
+            if (score >= 70) return '#f59e0b';
+            return '#ef4444';
+        };
+
+        out.innerHTML = `
+            <div class="result-card">
+                <div style="text-align:center;margin-bottom:1.5rem;">
+                    <span class="score-badge" style="background:${grade.color};color:#000;">
+                        ${grade.label} - Grade ${grade.grade}
+                    </span>
+                    ${cacheBadge}
+                </div>
+
+                <div style="text-align:center;margin-bottom:1.5rem;padding:1.5rem;background:rgba(16,185,129,0.05);border-radius:15px;border:1px solid var(--border);">
+                    <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.5rem;">
+                        <strong>Maiko Benchmark:</strong> main content typically loads in <strong>&lt; 600ms</strong> (0.6s)
+                    </p>
+                    <p style="font-size:1.1rem;margin-bottom:0.5rem;color:${cmp.color};font-weight:600;">
+                        ${cmp.text}
+                    </p>
+                    ${cmp.badge ? `<p style="margin-top:0.5rem;">${cmp.badge}</p>` : ''}
+                </div>
+
+                <!-- MOBILE SCORES - REAL DATA -->
+                <h3 style="font-size:1.3rem;margin-bottom:1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+                    <i class="fas fa-mobile-alt" style="margin-right:8px;color:var(--accent)"></i>Mobile Scores
+                </h3>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>Performance</span>
+                    <span class="metric-value" style="color:${getScoreColor(mobile.scores.performance)};">
+                        ${mobile.scores.performance}/100 ${getCWVIcon(mobile.scores.performance >= 90 ? 'good' : mobile.scores.performance >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-universal-access" style="margin-right:8px;color:var(--accent)"></i>Accessibility</span>
+                    <span class="metric-value" style="color:${getScoreColor(mobile.scores.accessibility)};">
+                        ${mobile.scores.accessibility}/100 ${getCWVIcon(mobile.scores.accessibility >= 90 ? 'good' : mobile.scores.accessibility >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-shield-alt" style="margin-right:8px;color:var(--accent)"></i>Best Practices</span>
+                    <span class="metric-value" style="color:${getScoreColor(mobile.scores.bestPractices)};">
+                        ${mobile.scores.bestPractices}/100 ${getCWVIcon(mobile.scores.bestPractices >= 90 ? 'good' : mobile.scores.bestPractices >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-search" style="margin-right:8px;color:var(--accent)"></i>SEO</span>
+                    <span class="metric-value" style="color:${getScoreColor(mobile.scores.seo)};">
+                        ${mobile.scores.seo}/100 ${getCWVIcon(mobile.scores.seo >= 90 ? 'good' : mobile.scores.seo >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+
+                <!-- DESKTOP SCORES - REAL DATA -->
+                <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+                    <i class="fas fa-desktop" style="margin-right:8px;color:var(--accent)"></i>Desktop Scores
+                </h3>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>Performance</span>
+                    <span class="metric-value" style="color:${getScoreColor(desktop.scores.performance)};">
+                        ${desktop.scores.performance}/100 ${getCWVIcon(desktop.scores.performance >= 90 ? 'good' : desktop.scores.performance >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-universal-access" style="margin-right:8px;color:var(--accent)"></i>Accessibility</span>
+                    <span class="metric-value" style="color:${getScoreColor(desktop.scores.accessibility)};">
+                        ${desktop.scores.accessibility}/100 ${getCWVIcon(desktop.scores.accessibility >= 90 ? 'good' : desktop.scores.accessibility >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-shield-alt" style="margin-right:8px;color:var(--accent)"></i>Best Practices</span>
+                    <span class="metric-value" style="color:${getScoreColor(desktop.scores.bestPractices)};">
+                        ${desktop.scores.bestPractices}/100 ${getCWVIcon(desktop.scores.bestPractices >= 90 ? 'good' : desktop.scores.bestPractices >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-search" style="margin-right:8px;color:var(--accent)"></i>SEO</span>
+                    <span class="metric-value" style="color:${getScoreColor(desktop.scores.seo)};">
+                        ${desktop.scores.seo}/100 ${getCWVIcon(desktop.scores.seo >= 90 ? 'good' : desktop.scores.seo >= 70 ? 'medium' : 'poor')}
+                    </span>
+                </div>
+
+                <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+                    Core Web Vitals (Mobile)
+                    <span style="font-size:0.7rem;color:var(--text-muted);font-weight:400;margin-left:10px;">
+                        <i class="fas fa-check-circle" style="color:#10b981"></i> Good
+                        <i class="fas fa-exclamation-circle" style="color:#f59e0b;margin-left:8px;"></i> Needs Improvement
+                        <i class="fas fa-times-circle" style="color:#ef4444;margin-left:8px;"></i> Poor
+                    </span>
+                </h3>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-image" style="margin-right:8px;color:var(--accent)"></i>
+                        Largest Contentful Paint (LCP)
+                        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;2.5s</span>
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.lcp.rating === 'good' ? '#10b981' : mobile.coreWebVitals.lcp.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.lcp.display} ${getCWVIcon(mobile.coreWebVitals.lcp.rating)}
+                    </span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-paint-brush" style="margin-right:8px;color:var(--accent)"></i>
+                        First Contentful Paint (FCP)
+                        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;1.8s</span>
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.fcp.rating === 'good' ? '#10b981' : mobile.coreWebVitals.fcp.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.fcp.display} ${getCWVIcon(mobile.coreWebVitals.fcp.rating)}
+                    </span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-layer-group" style="margin-right:8px;color:var(--accent)"></i>
+                        Cumulative Layout Shift (CLS)
+                        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;0.1</span>
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.cls.rating === 'good' ? '#10b981' : mobile.coreWebVitals.cls.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.cls.display} ${getCWVIcon(mobile.coreWebVitals.cls.rating)}
+                    </span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-server" style="margin-right:8px;color:var(--accent)"></i>
+                        Time to First Byte (TTFB)
+                        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;800ms</span>
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.ttfb.rating === 'good' ? '#10b981' : mobile.coreWebVitals.ttfb.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.ttfb.display} ${getCWVIcon(mobile.coreWebVitals.ttfb.rating)}
+                    </span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-hand-paper" style="margin-right:8px;color:var(--accent)"></i>
+                        Total Blocking Time (TBT)
+                        <span style="font-size:0.75rem;color:var(--text-muted);display:block;margin-left:24px;">Target: &lt;200ms</span>
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.tbt.rating === 'good' ? '#10b981' : mobile.coreWebVitals.tbt.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.tbt.display} ${getCWVIcon(mobile.coreWebVitals.tbt.rating)}
+                    </span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">
+                        <i class="fas fa-tachometer-alt" style="margin-right:8px;color:var(--accent)"></i>
+                        Speed Index
+                    </span>
+                    <span class="metric-value" style="color:${mobile.coreWebVitals.speedIndex.rating === 'good' ? '#10b981' : mobile.coreWebVitals.speedIndex.rating === 'medium' ? '#f59e0b' : '#ef4444'};">
+                        ${mobile.coreWebVitals.speedIndex.display} ${getCWVIcon(mobile.coreWebVitals.speedIndex.rating)}
+                    </span>
+                </div>
+
+                <h3 style="font-size:1.3rem;margin:1.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">Page Metrics</h3>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-weight-hanging" style="margin-right:8px;color:var(--accent)"></i>Total Page Size</span>
+                    <span class="metric-value">${mobile.metrics.pageSize}</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-network-wired" style="margin-right:8px;color:var(--accent)"></i>Network Requests</span>
+                    <span class="metric-value">${mobile.metrics.resourceCount}</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label"><i class="fas fa-code" style="margin-right:8px;color:var(--accent)"></i>DOM Elements</span>
+                    <span class="metric-value">${mobile.metrics.domSize}</span>
+                </div>
+
+                <div class="recommendation">
+                    <strong style="color:var(--accent);display:block;margin-bottom:0.5rem;"><i class="fas fa-user-tie" style="margin-right:8px;"></i>Maiko Analysis:</strong>
+                    ${rec.text}
+                </div>
+
+                <div class="btn-group" style="text-align:center;margin-top:1.5rem;">
+                    <a href="https://wa.me/254713324672?text=${whatsappMsg}" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>&nbsp;${perfScore >= 90 ? 'Maintain Elite Performance' : 'Fix My Performance'}
+                    </a>
+                    <a href="https://wa.me/254713324672?text=Hi%20Maiko%20Digital%2C%20I%20want%20to%20learn%20how%20you%20achieve%20sub-600ms%20load%20times%20and%20perfect%20PageSpeed%20scores." class="btn btn-outline">
+                        Show Me How You Hit 100/100
+                    </a>
+                </div>
+
+                <p style="font-size:0.8rem;color:var(--text-muted);margin-top:1rem;text-align:center;">
+                    <i class="fas fa-check-circle" style="color:var(--accent);"></i>
+                    Data source: ${mobile.source} | Last updated: ${new Date(data.timestamp).toLocaleTimeString()}
+                </p>
+            </div>
+        `;
+    } catch (error) {
+        console.error('Analysis error:', error);
+        let errorTitle = 'Analysis Failed';
+        let errorDetail = error.message;
+        let solution = '';
+
+        if (error.message.includes('API key not valid') || error.message.includes('PAGESPEED_API_KEY')) {
+            errorTitle = 'API Key / Worker Not Authorized';
+            errorDetail = 'Your API key or worker configuration is preventing access.';
+            solution = `
+                <div style="background:rgba(239,68,68,0.1);border:1px solid #ef4444;border-radius:12px;padding:1rem;margin-bottom:1rem;text-align:left;">
+                    <p style="color:#ef4444;font-weight:800;margin-bottom:0.5rem;"><i class="fas fa-lock"></i> API / Worker Configuration Issue</p>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.5rem;">
+                        Ensure your Cloudflare Worker has <code>PAGESPEED_API_KEY</code> set to: <code>AIzaSyDzEndLQSwSpgiYj3_XxM3ubHJBlFB_EUM</code>
+                    </p>
+                    <p style="font-size:0.85rem;color:var(--text-muted);">
+                        Worker URL: https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev
+                    </p>
+                </div>
+            `;
+        } else if (error.message.includes('WORKER_HTTP')) {
+            errorTitle = 'Worker Connection Failed';
+            errorDetail = 'Could not reach the Cloudflare Worker endpoint.';
+            solution = `
+                <div style="background:rgba(239,68,68,0.1);border:1px solid #ef4444;border-radius:12px;padding:1rem;margin-bottom:1rem;text-align:left;">
+                    <p style="color:#ef4444;font-weight:800;margin-bottom:0.5rem;"><i class="fas fa-plug"></i> Connection Error</p>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);">
+                        Verify your worker is deployed at: <code>https://maiko-pagespeed-worker.collinsmichael-dev.workers.dev</code>
+                    </p>
+                </div>
+            `;
+        }
+
+        out.innerHTML = `
+            <div class="result-card" style="border-color:#ef4444; text-align: center;">
+                <p style="color:#ef4444; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                    <i class="fas fa-exclamation-triangle"></i> ${errorTitle}
+                </p>
+                <p style="font-size:0.95rem; color:var(--text-secondary); margin-bottom: 1rem;">
+                    ${errorDetail}
+                </p>
+                ${solution ? `<div style="margin-bottom: 1.5rem;">${solution}</div>` : ''}
+
+                <div class="btn-group">
+                    <button onclick="document.getElementById('speed-form').dispatchEvent(new Event('submit'))" class="btn btn-outline">
+                        <i class="fas fa-redo"></i> Retry Analysis
+                    </button>
+                    <a href="https://wa.me/254713324672?text=Hi%20Maiko%20Digital%2C%20I%20tried%20to%20run%20a%20speed%20test%20but%20encountered%20an%20error.%20Can%20you%20help%20me%20with%20a%20manual%20speed%20audit%3F" class="btn btn-primary">
+                        <i class="fas fa-whatsapp"></i> Get Manual Speed Audit
+                    </a>
+                </div>
+            </div>
+        `;
+    }
 });
 </script>
 </body>
